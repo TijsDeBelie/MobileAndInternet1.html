@@ -5,7 +5,7 @@
 
 <h1 align="center">Bedankt voor uw reservatie</h1>
     <h3 align="center"> U krijgt binnenkort een mail ter bevestiging</h3>
-    <div align="center"><A HREF="D:\Tijs\Documenten\Odisee\Semester 1\Mobile en internet 1\Il_casale/home.html"> Terug naar de homepage </A></div>
+    <div align="center"><A HREF="home.html"> Terug naar de homepage </A></div>
     
     
 
