@@ -1,0 +1,113 @@
+html {
+    background: black;
+    background-image: linear-gradient(270deg, rgb(orange) 0%, rgb(216, 221, 221) 100%);
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background: black;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: "Helvetica", Helvetica, sans-serif;
+    font-size: 30px;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #FFA500;
+    font-weight: 500;
+    line-height: 0.5;
+    
+}
+
+h6 {
+    margin-top: 1.3em;
+    line-height: 1.7;
+}
+
+a {
+    color: #FFA500;
+    font-weight: 600;
+    line-height: 1.3;
+    font-size: 20px;
+
+}
+
+table {
+    color: #222;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: grey;
+    margin: 0 auto;
+    width: 100%;
+    }
+td {
+    padding-left: 50px;
+    padding-right: 50px;
+    
+    
+}
+#div_name table {
+width:300px;
+border:1px solid orange;
+background: black;
+Color: Orange;
+}
+
+#div_name2 table {
+width:100%;
+background: black;
+Color: Orange;
+}
+
+#div_name3 table {
+background: black;
+padding-left: 50px;
+padding-right: 50px;
+}
+
+
+ul {
+    color: white;
+    
+}
+b, strong {
+    font-weight: 1500;
+}
+
+samp {
+    display: block;
+}
+
+img {
+    -webkit-animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+            animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+    background: orange;
+    border: 20px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    display: block;
+    margin: 1.3em auto;
+    max-width: 95%;
+    
+        
+}
+
+
+@-webkit-keyframes colorize {
+    0% {
+        -webkit-filter: grayscale(100%);
+    }
+    100% {
+        -webkit-filter: grayscale(0%);
+    }
+}
+
+@keyframes colorize {
+    0% {
+        filter: grayscale(100%);
+    }
+    100% {
+        filter: grayscale(0%);
+    }
+}
