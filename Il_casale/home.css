@@ -19,6 +19,7 @@ h1, h4, h5 {
     color: #FFA500;
     font-weight: 500;
     line-height: 0.5;
+
     
 }
 h2 {
@@ -26,11 +27,24 @@ h2 {
     font-weight: 500;
     line-height: 0.5;
 	Margin-left: 50px;
+	
 
 	
 	
 	
 }
+img {
+    float: right;
+    margin: 0 0 10px 10px;
+	
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+
+tr {vertical-align: right;}
 
 
 h3 {
@@ -126,6 +140,7 @@ border:1px solid black;
 background: PapayaWhip ;
 Color: Black;
 font-size: 30px;
+	
 }
 
 #div_name2 table {
