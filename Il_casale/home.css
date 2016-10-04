@@ -1,25 +1,44 @@
 html {
-    background: black;
+    background: PapayaWhip ;
     background-image: linear-gradient(270deg, rgb(orange) 0%, rgb(216, 221, 221) 100%);
     -webkit-font-smoothing: antialiased;
 }
 
 body {
-    background: black;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    background: PapayaWhip ;
+
     color: #545454;
-    font-family: "Helvetica", Helvetica, sans-serif;
+    font-family:"Lucida Console";
     font-size: 30px;
     line-height: 1.5;
     margin: 0 auto;
     padding-bottom: 100px;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h4, h5 {
     color: #FFA500;
     font-weight: 500;
     line-height: 0.5;
     
+}
+h2 {
+	color: black;
+    font-weight: 500;
+    line-height: 0.5;
+	Margin-left: 50px;
+
+	
+	
+	
+}
+
+
+h3 {
+	color: #FFA500;
+    font-weight: 500;
+    line-height: 0.5;
+	Margin-left: 70px;
+	
 }
 
 h6 {
@@ -32,6 +51,7 @@ a {
     font-weight: 600;
     line-height: 1.3;
     font-size: 20px;
+    text-decoration:none;
 
 }
 
@@ -42,28 +62,80 @@ table {
     background: grey;
     margin: 0 auto;
     width: 100%;
-    }
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+/*dropdown menu*/
+
+.dropbtn {
+    background-color: grey;
+    color: grey;
+
+    font-size: 20px;
+    font-weight: 600;
+
+
+    color: orange;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: grey;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    min-width: 160px;
+    overflow: auto;
+}
+/*link design dropdown*/
+.dropdown-content a {
+    color: orange;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+/*einde dropdown menu*/
+
+/* cel van een tabel*/
+   
 td {
     padding-left: 50px;
     padding-right: 50px;
+    vertical-align: bottom;
     
     
 }
 #div_name table {
 width:300px;
-border:1px solid orange;
-background: black;
-Color: Orange;
+border:1px solid black;
+background: PapayaWhip ;
+Color: Black;
+font-size: 30px;
 }
 
 #div_name2 table {
 width:100%;
-background: black;
+background: PapayaWhip ;
 Color: Orange;
 }
 
 #div_name3 table {
-background: black;
+background: PapayaWhip ;
 padding-left: 50px;
 padding-right: 50px;
 
@@ -71,20 +143,20 @@ padding-right: 50px;
 
 
 ul {
-    color: white;
+    color: black;
     
 }
 b, strong {
     font-weight: 1500;
 }
 
-#div_name4 img {
-    float: right;
-}
 
 samp {
     display: block;
 }
+
+
+/*oranje rand rond foto's*/
 
 img {
     -webkit-animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;

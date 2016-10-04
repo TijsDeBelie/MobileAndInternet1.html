@@ -6,8 +6,10 @@
 		<meta name="keywords" content="Italiaans , Restaurant ,Grimbergen, Merchtem, Pizza">
         <meta name="viewport" content="width=device-width, height=device-height" />
 		<title>Restaurant Il Casale</title>
+        
 <link rel=stylesheet href=home.css>
 	</head>
+    
    
         
         
@@ -17,7 +19,14 @@
     <table align="center"> <tr> <td> <A HREF="home.html"> Home </A> </td>
             
             
-    <td> <A HREF="Menu.html"> Menu </A></td>
+    <td> <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="Menu.html">Menu</a>
+   
+    <a href="#">Take-Away</a>
+  </div>
+</div></td>
         
         
     <td> <A HREF="foto.html"> Foto's </A></td>
@@ -31,12 +40,35 @@
     </tr> 
     </table>
         
+<script>
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+        
         
         
     <div align="center" > <h2> Pizzeria</h2> <h1> <Strong>IL CASALE</Strong></h1>
       
       
-            <p> <img src="header1.jpg" alt="logo" </p>
+    <img src="header1.jpg" alt="logo">
         
 
     </div>
@@ -44,16 +76,16 @@
            
   
          <div align="center"><a> Adresgegevens<br>
-        Straatnaam en nummer <br>
-        Gemeente, België<br>
+        Hogesteenweg 27<br>
+        Grimbergen, België<br>
         Telefoonnummer<br>
-        <a href="mailto:Tijsdebelie1997@gmail.com"> E-Mail<br>
+
              <br>
              
-             <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:440px;width:700px;'><div id='gmap_canvas' style='height:440px;width:700px;'></div><div><small><a href="http://www.embedgooglemaps.com/nl/">															<style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(50.9334515,4.372706300000004),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(50.9334515,4.372706300000004)});infowindow = new google.maps.InfoWindow({content:'<strong>Onze locatie</strong><br>Hogesteenweg 27, 1850 Grimbergen<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+             <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyD2n4jvCptnob6YeBH5isDtJ-iwlyazuS8'></script><div style='overflow:hidden;height:400px;width:520px;'><div id='gmap_canvas' style='height:400px;width:520px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://embedmap.org/'>google maps iframe embed</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=49302d5783733ca4e94480e6fd83255c4b237633'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(50.9331993,4.371972899999946),mapTypeId: google.maps.MapTypeId.TERRAIN};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(50.9331993,4.371972899999946)});infowindow = new google.maps.InfoWindow({content:'<strong></strong><br>Hogesteenweg 152<br> Grimbergen<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
              
              </div>
-             <br> 
+             
         
         
         
