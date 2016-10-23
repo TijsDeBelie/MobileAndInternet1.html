@@ -1,95 +1,101 @@
 <!DOCTYPE html>
 <html lang="nl">
-	<head>
-		<meta charset="utf-8" >
-		<meta name="description" content="IL casale is een Italiaans restaurant in Grimbergen." >
-		<meta name="keywords" content="Italiaans , Restaurant ,Grimbergen, Merchtem, Pizza">
-        <meta name="viewport" content="width=device-width, height=device-height" />
-		<title>Restaurant Il Casale</title>
-        
-<link rel=stylesheet href=home.css>
-	</head>
-    
-   
-        
-        
-	<body>
-         
-        
-    <table align="center"> <tr> <td> <A HREF="home.html"> Home </A> </td>
-            
-            
-    <td> <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Menu</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="Menu.html">Menu</a>
-   
-    <a href="#">Take-Away</a>
-  </div>
-</div></td>
-        
-        
-    <td> <A HREF="foto.html"> Foto's </A></td>
-    <td> <A HREF="reservaties.html"> Reservaties</A></td>   
-    
-        <td align="right"> <A HREF="ilcasale.html"> NL </A></td>
-            
-            <td align="right"> <A HREF="FRilcasale.html"> FR </A> </td>
-        
-            
-    </tr> 
-    </table>
-        
-<script>
 
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="IL casale is een Italiaans restaurant in Grimbergen.">
+	<meta name="keywords" content="Italiaans , Restaurant ,Grimbergen, Merchtem, Pizza">
+	<meta name="viewport" content="width=device-width, height=device-height" />
+	<title>Restaurant Il Casale</title>
+	<link rel=stylesheet href="testpagina.css"> </head>
 
+<body>
+	<nav>
+		<ul>
+			<li><a href="Home.html">HOME</a></li>
+			<li><a href="Restaurant.html">ONS RESTAURANT</a></li>
+			<li class="dropdown"> <a href="#hetmenu" class="dropbtn">ONS MENU</a>
+				<div class="dropdown-content"> <a href="Menu2.html">Menu</a> <a href="Drank.html">Drank- &#38; wijnkaart</a> <a href="away.html">Take-away</a> </div>
+			</li>
+			<li><a href="Foto.html">FOTO'S</a></li>
+			<li><a href="Openingsuren.html">OPENINGSUREN</a></li>
+			<li class="dropdown"> <a href="#taal" class="dropbtn">TAAL/LANGUE</a>
+				<div class="dropdown-content"> <a href="ilcasale.html">NL</a> <a href="FRilcasale.html">FR</a> </div>
+			</li>
+		</ul>
+	</nav>
+	
+	<div class="background">
+		<div class="logo">
+			<br>
+			<h2>Pizzeria</h2>
+			<h1>IL CASALE</h1> <img src="header1.jpg" alt="logo"> </div>
+		<div class="adres"> Hogesteenweg 27
+			<br> Grimbergen, België
+			<br> Tel : 02/270.02.63
+			<br>
+			<br> </div>
+		
+		<nav>
+			<div align="center">
+				<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyD2n4jvCptnob6YeBH5isDtJ-iwlyazuS8'></script>
+				<div style='overflow:hidden;height:400px;width:520px;'>
+					<div id='gmap_canvas' style='height:400px;width:520px;'></div>
+					<style>
+						#gmap_canvas img {
+							max-width: none!important;
+							background: none!important
+						}
+					</style>
+				</div> <a href='https://embedmap.org/'>.</a>
+				<script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=49302d5783733ca4e94480e6fd83255c4b237633'></script>
+				<script type='text/javascript'>
+					function init_map() {
+						var myOptions = {
+							zoom: 15
+							, center: new google.maps.LatLng(50.9331993, 4.371972899999946)
+							, mapTypeId: google.maps.MapTypeId.TERRAIN
+						};
+						map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+						marker = new google.maps.Marker({
+							map: map
+							, position: new google.maps.LatLng(50.9331993, 4.371972899999946)
+						});
+						infowindow = new google.maps.InfoWindow({
+							content: '<strong></strong><br>Hogesteenweg 152<br> Grimbergen<br>'
+						});
+						google.maps.event.addListener(marker, 'click', function () {
+							infowindow.open(map, marker);
+						});
+						infowindow.open(map, marker);
+					}
+					google.maps.event.addDomListener(window, 'load', init_map);
+				</script>
+			</div>
+		</nav>
+		
+		<script>
+			function myFunction() {
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick = function (event) {
+				if (!event.target.matches('.dropbtn')) {
+					var dropdowns = document.getElementsByClassName("dropdown-content");
+					var i;
+					for (i = 0; i < dropdowns.length; i++) {
+						var openDropdown = dropdowns[i];
+						if (openDropdown.classList.contains('show')) {
+							openDropdown.classList.remove('show');
+						}
+					}
+				}
+			}
+		</script>
+		
+	
+	</div>
+	<div style="position:fixed;bottom:0;height:auto;width:100%;text-align:right"><strong> &copy;ITDB</strong></div>
+	
+</body>
 
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
-
-        
-        
-        
-    <div align="center" > <h2> Pizzeria</h2> <h1> <Strong>IL CASALE</Strong></h1>
-      
-      
-    <img src="header1.jpg" alt="logo">
-        
-
-    </div>
-            
-           
-  
-         <div align="center"><a> Adresgegevens<br>
-        Hogesteenweg 27<br>
-        Grimbergen, België<br>
-        Telefoonnummer<br>
-
-             <br>
-             
-             <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyD2n4jvCptnob6YeBH5isDtJ-iwlyazuS8'></script><div style='overflow:hidden;height:400px;width:520px;'><div id='gmap_canvas' style='height:400px;width:520px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://embedmap.org/'>google maps iframe embed</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=49302d5783733ca4e94480e6fd83255c4b237633'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(50.9331993,4.371972899999946),mapTypeId: google.maps.MapTypeId.TERRAIN};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(50.9331993,4.371972899999946)});infowindow = new google.maps.InfoWindow({content:'<strong></strong><br>Hogesteenweg 152<br> Grimbergen<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
-             
-             </div>
-             
-        
-        
-        
-
-   
-	</body>
 </html>

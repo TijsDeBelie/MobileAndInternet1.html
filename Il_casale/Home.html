@@ -7,49 +7,65 @@
         <meta name="viewport" content="width=device-width, height=device-height" />
 		<title>Menu Il Casale</title>
         
-<link rel=stylesheet href=home.css>
+<link rel=stylesheet href=testpagina.css>
 
 	</head>
- 
+	
 
-	<body>
-        <table align="right"> <tr><td><td><td><td><td></td></td><td> <A HREF="ilcasale.html"> NL </A></td>
-            
-            <td> <A HREF="FRilcasale.html"> FR </A> </td>
-            </tr>
-        </table>
-        
-        <br>
-        <br><div align="center"><h1> IL CASALE </h1></div>
-        
-                <div> <p> <img src="header7.jpg" alt="Home"</p></div>
+	<body onload = "startTimer()">
+  
+       <nav>
+		  
+<ul>
+    <li class="dropdown">
 
+    <a href="#taal" class="dropbtn">Kies uw taal/Choissisez votre langue</a>
+    <div class="dropdown-content">
+      <a href="ilcasale.html">NL</a>
+      <a href="FRilcasale.html">FR</a>
 
-<h3 align="center"> Openingsuren / Heures d'ouverture</h3>
+    </div>
+    </li>
 
-   
+</ul>
+			
+	</nav>
+<div class="background">
+		<div align="center">
 
+			<img class="logohome" src="logo.jpg" alt="logo" />
 
-<div id='div_name'>
- <table>
-<tr>
-    <td> MA:</td><td> LU:</td> <td> Gesloten </td> </tr>
-<tr> 
-    <td> Di:</td> <td> MA:</td><td> Gesloten </td> </tr>
-<tr> 
-    <td> WOE:</td> <td> ME:</td><td> Gesloten </td> </tr>
-     <tr>
-    <td> DO:</td> <td> JE:</td><td> Gesloten </td> </tr>
-     <tr>
-    <td> VR:</td> <td> VE:</td><td> Gesloten </td> </tr>
-     <tr>
-    <td> ZA:</td> <td> SA:</td><td> Gesloten </td> </tr>
-     <tr>
-    <td> ZON:</td> <td> DI:</td><td> Gesloten </td> </tr>
+		<h4> Grimbergen</h4>
+			
+		
+		
+		 <img id="img" src="header11.jpg" alt="changer" width="40%" height="40%" />
+			</div>
+       
+		
+		<script type = "text/javascript">
+          function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("img").src = images[x];
+          }
 
- </table>
-    
-</div>
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              document.getElementById("img").src = images[x];
+          }
 
+          function startTimer() {
+              setInterval(displayNextImage, 1250);
+          }
+
+          var images = [], x = -1;
+          
+          images[0] = "header11.jpg";
+          images[1] = "header7.jpg";
+		  images[2] = "header1.jpg";
+      </script>
+	   
+<div style="position:fixed;bottom:0;height:auto;margin-top:40px;width:100%;text-align:right"><strong> &copy;ITDB</strong></div>
+	</div> 
 	</body>
 </html>
