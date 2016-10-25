@@ -114,13 +114,36 @@ nav li.dropdown1 {
 .logo {
     align-self: center;
 	text-align: center;
-	color:orange;
+	color:red;
 }
 
+
+h1:first-letter{
+	font-family: 'Euphoria Script', cursive;
+	text-transform: uppercase;
+	font-size: 70px;
+}
 h1{
 	font-family: 'Euphoria Script', cursive;
 	text-transform: lowercase;
 	font-size: 70px;
+}
+
+h2:first-letter {
+	margin-top: 0;
+
+	
+	
+	font-size: 50px;
+	line-height: 1;
+	color: red;
+
+    font-weight: 500;
+	padding: 0;
+	top: 0;
+	font-family: 'Euphoria Script', cursive;
+	text-transform: uppercase;
+
 }
 h2 {
 	margin-top: 0;
@@ -139,10 +162,15 @@ h2 {
 
 }
 
+
+
+
+
 .adres {
 	text-align: center;
 	font: 30px;
 	line-height: 2.5;
+	padding-bottom: 25px;
 }
 
 
@@ -377,3 +405,9 @@ th {
 .space {
 	padding-top: 50px;
 }
+
+.open {
+	margin-left: 5%;
+}
+
+
