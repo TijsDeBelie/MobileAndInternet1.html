@@ -1,0 +1,24 @@
+
+.antwoord {
+	background: grey;
+	color: grey;
+	font-size: 20px;
+}
+
+.antwoord:hover {
+	color: white;
+	font-size: 20px;
+	
+	
+	
+	
+}
+
+body {
+	background: grey;
+	
+}
+
+h1 {
+	text-decoration: underline;
+}
