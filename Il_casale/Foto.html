@@ -7,7 +7,29 @@
         <meta name="viewport" content="width=device-width, height=device-height" />
 		<title>Foto's Il Casale</title>
         <link rel=stylesheet href=Design.css>
+		<script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		
 
+		
+<script> 
+	
+    $(document).ready(function() { 
+    $('nav ul li a:not(:only-child)').click(function(e){
+        $(this).siblings('.submenu').slideToggle('slow');
+    });
+    
+    $('.nav-mobile').click(function(){
+        $('.nav-1 ul:not(.submenu)').slideToggle();
+        $(".line").toggleClass("active");
+    });
+
+	});
+</script>
+	<style>
+img {
+    max-width: 100%;
+}
+</style>
 
 	</head>
 
@@ -16,20 +38,36 @@
 		
 		
                  
-   <nav>
-		<ul>
-			<li><a href="Home.html">HOME</a></li>
-			<li><a href="Restaurant.html">ONS RESTAURANT</a></li>
-			<li class="dropdown"> <a href="#hetmenu" class="dropbtn">ONS MENU</a>
-				<div class="dropdown-content"> <a href="Menu2.html">Menu</a> <a href="Drank.html">Drank- &#38; wijnkaart</a> <a href="away.html">Take-away</a> </div>
-			</li>
-			<li><a href="Foto.html">FOTO'S</a></li>
-			<li><a href="Openingsuren.html">OPENINGSUREN</a></li>
-			<li class="dropdown"> <a href="#taal" class="dropbtn">TAAL/LANGUE</a>
-				<div class="dropdown-content"> <a href="ilcasale.html">NL</a> <a href="FRilcasale.html">FR</a> </div>
-			</li>
-		</ul>
-	</nav>
+   <nav class="nav-1">
+
+   
+    <div class="nav-mobile">
+        <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+    </div>
+    <ul class="nav-list">
+        <li><a href="Home.html">HOME</a></li>
+  		<li><a href="Restaurant.html">ONS RESTAURANT</a></li>
+        <li><a href="#">MENU</a>
+            <ul class="submenu">
+                <li><a href="Menu2.html">Menu</a></li>
+				<li><a href="Drank.html">Drank- &#38; wijnkaart</a></li>
+				<li><a href="away.html">Take-away</a></li>
+            </ul>
+        </li>
+       <li><a href="Foto.html">FOTO'S</a></li>
+	   <li><a href="Openingsuren.html">OPENINGSUREN</a></li>
+		<li><a href="#">TAAL/LANGUE</a>
+        <ul class="submenu">
+                <li><a href="ilcasale.html">NL</a> </li>
+                <li><a href="FRilcasale.html">FR</a></li>
+              
+            </ul>
+        </li>
+
+    </ul>
+</nav>
 		
 		<div class="background">
         
@@ -38,16 +76,13 @@
         <h3 align="center"> Onderstaand vind je een overzicht van enkele impressies van onze zaak, onze zaal en onze gerechten. </h3>
         
    
-        
-
-    
-<div id="cp_widget_e2e807a3-84b3-43cc-a901-359886b00de7"><h4 align="center"> De fotomontage is aan het laden, even geduld aub! </h4></div><script type="text/javascript">
-var cpo = []; cpo["_object"] ="cp_widget_e2e807a3-84b3-43cc-a901-359886b00de7"; cpo["_fid"] = "AMGANydSNwD7";
+<div id="cp_widget_0388bf40-1d65-475f-a3e6-b455c836dbea"><h4 align="center">De fotomontage is aan het laden, even geduld aub!</h4></div><script type="text/javascript">
+var cpo = []; cpo["_object"] ="cp_widget_0388bf40-1d65-475f-a3e6-b455c836dbea"; cpo["_fid"] = "AIDAPytKkEXr";
 var _cpmp = _cpmp || []; _cpmp.push(cpo);
 (function() { var cp = document.createElement("script"); cp.type = "text/javascript";
 cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";
 var c = document.getElementsByTagName("script")[0];
-c.parentNode.insertBefore(cp, c); })(); </script><noscript>Powered by Cincopa <a href='https://www.cincopa.com/email-campaigns-integration'>Video Email</a> for Business solution.</noscript>        
+c.parentNode.insertBefore(cp, c); })(); </script><noscript>Powered by Cincopa <a href='https://www.cincopa.com/email-campaigns-integration'>Video Email</a> for Business solution.</noscript>
         
 <div style="position:fixed;bottom:0;height:auto;margin-top:40px;width:100%;text-align:right"><strong> &copy;ITDB</strong></div>
 		</div> 
