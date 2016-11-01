@@ -10,6 +10,7 @@ div.container {
     line-height: 150%;
 }
 
+	
 div.header{
     padding-left: 0.5em;
 	padding-bottom: 2.5em;
@@ -25,13 +26,20 @@ div.header{
 
 .header h1 {
     padding: 0;
-    margin: 20px;
+    margin: 2%;
 }
 
 div.left {
     float: left;
     width: 60%;
-    margin: 20px;		
+    margin: 20px;
+	font-family: 'Euphoria Script';
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 50px;
+	
+	
+
 }
 
 div.content {
@@ -39,6 +47,7 @@ div.content {
 
     padding: 1em;
     overflow: hidden;
+	margin-top: 10%;
 }
 	
 img {
@@ -49,7 +58,8 @@ img {
 }
 
 h2 {
-	margin-left: 20px;
+	margin-left: 2%;
+	margin-top: 5%;
 	
 	}
 
@@ -58,35 +68,74 @@ a {
 	color: white;
 	}
 	
+img {
+    max-width: 100%;
+}
+
+	
 
 </style>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		
+
+		
+<script> 
+	
+    $(document).ready(function() { 
+    $('nav ul li a:not(:only-child)').click(function(e){
+        $(this).siblings('.submenu').slideToggle('slow');
+    });
+    
+    $('.nav-mobile').click(function(){
+        $('.nav-1 ul:not(.submenu)').slideToggle();
+        $(".line").toggleClass("active");
+    });
+
+	});
+</script>	
+
 
 <title> Menu Il Casale</title>
 </head>
 
 <body>
-	<!Navigatiebar nog kopieren en drankenlijst apart zetten + kleuren rood van tussentitels (fredde) >
+	
 	<a id="top"></a>
-	<nav>
-		<ul>
-			<li><a href="Home.html">HOME</a></li>
-			<li><a href="Restaurant.html">ONS RESTAURANT</a></li>
-			<li class="dropdown"> <a href="#hetmenu" class="dropbtn">ONS MENU</a>
-				<div class="dropdown-content"> <a href="Menu2.html">Menu</a> <a href="Drank.html">Drank- &#38; wijnkaart</a> <a href="away.html">Take-away</a> </div>
-			</li>
-			<li><a href="Foto.html">FOTO'S</a></li>
-			<li><a href="Openingsuren.html">OPENINGSUREN</a></li>
-			<li class="dropdown"> <a href="#taal" class="dropbtn">TAAL/LANGUE</a>
-				<div class="dropdown-content"> <a href="ilcasale.html">NL</a> <a href="FRilcasale.html">FR</a> </div>
-			</li>
-		</ul>
-	</nav>
-	<div class="Menukeuze">
-		<ul class="Menukeuze">
-			<li class="dropdown"> <a href="#hetmenu" class="dropbtn">Selecteer uw keuze :</a>
-				<div class="dropdown-content"> <a href="#Entrate">Entrate</a> <a href="#Pasta">Pasta</a> <a href="#Scaloppine">Scaloppine di vitello</a> <a href="#Carne">Carne</a> <a href="#Pesce">Pesce</a> <a href="#Contorni">I contorni</a> <a href="#Pizza">Pizza</a><a href="#Bambini">Bambini</a> <a href="#Dessert">Dessert</a> </div>
-			</li>
-		</ul>
+
+	<nav class="nav-1">
+		<img style="margin-top:0.8%" src="Images/lOGO12.png" width="11%" height="auto"/>
+
+   
+    <div class="nav-mobile">
+        <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+    </div>
+    <ul class="nav-list">
+        <li><a href="Home.html">HOME</a></li>
+  		<li><a href="Restaurant.html">ONS RESTAURANT</a></li>
+        <li><a href="#">MENU</a>
+            <ul class="submenu">
+                <li><a href="Menu2.html">Kaart</a></li>
+				<li><a href="Drank.html">Drank- &#38; wijnkaart</a></li>
+				<li><a href="away.html">Take-away</a></li>
+            </ul>
+        </li>
+       <li><a href="Foto.html">FOTO'S</a></li>
+	   <li><a href="Openingsuren.html">OPENINGSUREN</a></li>
+		<li><a href="Locatie.html">LOCATIE</a></li>
+		<li><a href="#">TAAL/LANGUE</a>
+        <ul class="submenu">
+                <li><a href="ilcasale.html">NL</a> </li>
+                <li><a href="FRilcasale.html">FR</a></li>
+              
+            </ul>
+        </li>
+
+    </ul>
+</nav>
+	
+	
 	</div>
 
 	<div class="background">
@@ -96,7 +145,7 @@ a {
 			<h1 class="header">ENTRATE</h1></div>
 			<div class="left">
 				<h2> Fredde </h2>
-				<ul>
+				<ul class="gerecht">
 					<li>Bruschetta</li>
 					<li>Mozzarella di buffala alla caprese</li>
 					<li>Rundscarpaccio</li>
@@ -106,10 +155,10 @@ a {
 					<li>Antipasto casale "royale" (2 personen)</li>
 				</ul>
 			</div>
-			<div class="content"> <img src="Images/Pizza2.jpg"alt="2"> </div>
+			<div class="content"><img src="Images/Pizza2.jpg" alt="2"> </div>
 			<div class="left">
 				<h2>Calde</h2>
-				<ul>
+				<ul class="gerecht">
 					<li>Scampi casale</li>
 					<li>Scampi diavola</li>
 					<li>Scampi al aglio</li>
@@ -126,14 +175,14 @@ a {
 		<a id="Pasta"></a>
 		<div class="container">
 			<div class="header">
-				<h1>PASTA</h1><a href="#top"> <div class="wrap" style="border: 2px solid #e74c3c;background: #c0392b;">
+				<h1>PASTA</h1><a href="#top"> <div class="wrap" style="border: 2px solid #4B0303; background: #4B0303">
 						<div class="arrow">
 		    				<span class="left-wing" style="background-color: white;"></span>
 							<span class="right-wing" style="background-color: white;"></span>
 	  					</div>
 		</div></a></div>
 			<div class="left">
-				<ul>
+				<ul class="gerecht">
 					<li>Spaghetti bolognese</li>
 					<li>Spaghetti al ragù</li>
 					<li>Spaghetti carbonara</li>
@@ -166,14 +215,14 @@ a {
 		<a id="Scaloppine"></a>
 		<div class="container">
 			<div class="header">
-				<h1>SCALOPPINE DI VITELLO</h1><a href="#top"><div class="wrap" style="border: 2px solid #e74c3c;background: #c0392b;">
+				<h1>SCALOPPINE DI VITELLO</h1><a href="#top"><div class="wrap" style="border: 2px solid #4B0303; background: #4B0303">
 						<div class="arrow">
 		    				<span class="left-wing" style="background-color: white;"></span>
 							<span class="right-wing" style="background-color: white;"></span>
 	  					</div>
 		</div></a></div>
 			<div class="left">
-				<ul>
+				<ul class="gerecht">
 					<li>Milanese</li>
 					<li>Alla parmigiana</li>
 					<li>Al parmigiano</li>
@@ -183,7 +232,7 @@ a {
 					<li>Ossobuco</li>
 				</ul>
 				<div class="saus4">
-					<ul style="list-style: none;">
+					<ul style="list-style: none; margin-left: 6%; text-decoration: underline;">
 						<li> Verkrijgbaar met pasta of frietjes </li>
 					</ul>
 				</div>
@@ -194,30 +243,35 @@ a {
 		<a id="Carne"></a>
 		<div class="container">
 			<div class="header">
-				<h1>CARNE</h1><a href="#top"><div class="wrap" style="border: 2px solid #e74c3c;background: #c0392b;">
+				<h1>CARNE</h1><a href="#top"><div class="wrap" style="border: 2px solid #4B0303; background: #4B0303">
 						<div class="arrow">
 		    				<span class="left-wing" style="background-color: white;"></span>
 							<span class="right-wing" style="background-color: white;"></span>
 	  					</div>
 		</div></a></div>
 			<div class="left">
-				<ul>
+				<ul class="gerecht">
 					<li>Steak</li>
 					<li>Rundstussenrib</li>
 				</ul>
 				<div class="saus">
 					<ul style="list-style: none;">
-						<li> Sauzen naar keuze : </li>
+						<li class="saus0"> Sauzen naar keuze : </li>
 					</ul>
+					
+					
 				</div>
-				<div class="saus2"> Pizzaiola
-					<br> Gorgonzola
-					<br> Archiduc
-					<br> Bearnaise
-					<br> Groene peper
-					<br> </div>
+				<div class="saus2"> 
+					<ul>
+					<li> Pizzaiola </li>
+					<li> Gorgonzola </li>
+					<li> Archiduc </li>
+					<li> Bearnaise </li>
+					<li> Groene peper </li>
+						</ul>
+					</div>
 				<div class="saus3">
-					<ul style="list-style: none;">
+					<ul style="list-style: none; margin-left: 6%; text-decoration: underline;">
 						<li> Verkrijgbaar met pasta of frietjes </li>
 					</ul>
 				</div>
@@ -228,20 +282,20 @@ a {
 		<a id="Pesce"></a>
 		<div class="container">
 			<div class="header">
-				<h1>PESCE </h1><a href="#top"><div class="wrap" style="border: 2px solid #e74c3c;background: #c0392b;">
+				<h1>PESCE </h1><a href="#top"><div class="wrap" style="border: 2px solid #4B0303; background: #4B0303">
 						<div class="arrow">
 		    				<span class="left-wing" style="background-color: white;"></span>
 							<span class="right-wing" style="background-color: white;"></span>
 	  					</div>
 		</div></a></div>
 			<div class="left">
-				<ul>
+				<ul class="gerecht">
 					<li>Duo di pesce alla griglia (calamari-gambas)</li>
 					<li>Zalm met zijn puree van basilicum &#38; olijfolie</li>
 					<li>Sole "meuni&egrave;re" of "ostendaise"</li>
 				</ul>
 				<div class="saus4">
-					<ul style="list-style: none;">
+					<ul style="list-style: none; margin-left: 6%; text-decoration: underline;">
 						<li> Verkrijgbaar met pasta of frietjes </li>
 					</ul>
 				</div>
@@ -252,27 +306,27 @@ a {
 		<a id="Contorni"></a>
 		<div class="container">
 			<div class="header">
-				<h1>I CONTORNI </h1><a href="#top"><div class="wrap" style="border: 2px solid #e74c3c;background: #c0392b;">
+				<h1>I CONTORNI </h1><a href="#top"><div class="wrap" style="border: 2px solid #4B0303; background: #4B0303">
 						<div class="arrow">
 		    				<span class="left-wing" style="background-color: white;"></span>
 							<span class="right-wing" style="background-color: white;"></span>
 	  					</div>
 		</div></a></div>
 			<div class="left">
-				<ul>
+				<ul class="gerecht">
 					<li>Groentenkrans</li>
 					<li>Gemengde sla</li>
 					<li>Frietjes</li>
 					<li>Pasta</li>
 				</ul>
 			</div>
-			<div class="content"> <img src="Images/Pizza2.jpg" alt="2"> </div>
+			
 			<div class="footer"></div>
 		</div>
 		<a id="Pizza"></a>
 		<div class="container">
 			<div class="header">
-				<h1>PIZZA </h1><a href="#top"><div class="wrap" style="border: 2px solid #e74c3c;background: #c0392b;">
+				<h1>PIZZA </h1><a href="#top"><div class="wrap" style="border: 2px solid #4B0303; background: #4B0303">
 						<div class="arrow">
 		    				<span class="left-wing" style="background-color: white;"></span>
 							<span class="right-wing" style="background-color: white;"></span>
@@ -280,7 +334,7 @@ a {
 		</div></a></div>
 			<div class="left">
 				
-			<ul>
+			<ul class="gerecht">
 				<li> Margherita <em>(tomaten, mozzarella)</em> </li>
 				<li> Regina <em>(tomaten, mozzarella, hesp, champignons, olijven)</em> </li>
 				<li> Napoletana <em>(tomaten, mozzarella, ansjovis, olijven)</em> </li>
@@ -325,25 +379,25 @@ a {
 		<a id="Bambini"></a>
 		<div class="container">
 			<div class="header">
-				<h1>BAMBINI </h1><a href="#top"><div class="wrap" style="border: 2px solid #e74c3c;background: #c0392b;">
+				<h1>BAMBINI </h1><a href="#top"><div class="wrap" style="border: 2px solid #4B0303; background: #4B0303">
 						<div class="arrow">
 		    				<span class="left-wing" style="background-color: white;"></span>
 							<span class="right-wing" style="background-color: white;"></span>
 	  					</div>
 		</div></a></div>
 			<div class="left">
-				<ul>
+				<ul class="gerecht">
 					<li>Spaghetti bolognese</li>
 					<li>Kip met appelmoes en frietjes</li>
 				</ul>
 			</div>
-			<div class="content"> <img src="Images/Pizza2.jpg" alt="2"> </div>
+			
 			<div class="footer"></div>
 		</div>
 		<a id="Dessert"></a>
 		<div class="container">
 			<div class="header">
-				<h1>DESSERT </h1><a href="#top"><div class="wrap" style="border: 2px solid #e74c3c;background: #c0392b;">
+				<h1>DESSERT </h1><a href="#top"><div class="wrap" style="border: 2px solid #4B0303; background: #4B0303">
 						<div class="arrow">
 		    				<span class="left-wing" style="background-color: white;"></span>
 							<span class="right-wing" style="background-color: white;"></span>
@@ -351,7 +405,7 @@ a {
 		</div></a></div>
 			<div class="left">
 				<h2>Gelati</h2>
-				<ul>
+				<ul class="gerecht">
 					<li>Coupe dame blanche</li>
 					<li>Coupe br&eacute;silienne</li>
 					<li>Coupe sorbet mixte</li>
@@ -365,7 +419,7 @@ a {
 					<li>Italiaanse meringue</li>
 				</ul>
 				<h2>Dolci</h2>
-				<ul>
+				<ul class="gerecht">
 					<li>Huisbereide tiramisu</li>
 					<li>Panna cotta</li>
 					<li>Chocolademousse</li>
@@ -381,7 +435,16 @@ a {
 			<div class="content"> <img src="Images/Pizza2.jpg" alt="2"> </div>
 			<div class="footer"></div>
 		</div>
-		
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86533222-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 		<div style="position:fixed;bottom:0;height:auto;margin-top:40px;width:100%;text-align:right"><strong> &copy;ITDB</strong></div>
 	</div>
 </body>

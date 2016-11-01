@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="nl">
 
 <head>
@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, height=device-height" />
 	<title>Restaurant Il Casale</title>
 	<link rel=stylesheet href="Design.css"> 
-	<script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		
 
 		
@@ -36,6 +36,7 @@ img {
 
 <body>
 	<nav class="nav-1">
+		<img style="margin-top:0.8%" src="Images/lOGO12.png" width="11%" height="auto"/>
 
    
     <div class="nav-mobile">
@@ -48,13 +49,14 @@ img {
   		<li><a href="Restaurant.html">ONS RESTAURANT</a></li>
         <li><a href="#">MENU</a>
             <ul class="submenu">
-                <li><a href="Menu2.html">Menu</a></li>
+                <li><a href="Menu2.html"> Kaart</a></li>
 				<li><a href="Drank.html">Drank- &#38; wijnkaart</a></li>
 				<li><a href="away.html">Take-away</a></li>
             </ul>
         </li>
        <li><a href="Foto.html">FOTO'S</a></li>
 	   <li><a href="Openingsuren.html">OPENINGSUREN</a></li>
+		<li><a href="Locatie.Html">LOCATIE</a></li>
 		<li><a href="#">TAAL/LANGUE</a>
         <ul class="submenu">
                 <li><a href="ilcasale.html">NL</a> </li>
@@ -67,53 +69,15 @@ img {
 </nav>
 	
 	<div class="background">
-		<div class="logo">
-			<br>
-			<h2>Pizzeria</h2>
-			<h1>IL CASALE</h1>
-		<div class="adres"> Hogesteenweg 27
-			<br> Grimbergen, België
-			<br> Tel : 02/270.02.63
-			
-			<br> </div>
-		
-		<nav>
-			<div align="center" style="max-width: 100%">
-				<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyD2n4jvCptnob6YeBH5isDtJ-iwlyazuS8'></script>
-				<div style='overflow:hidden;height:400px;width:520px;'>
-					<div id='gmap_canvas' style='height:400px;width:520px;'></div>
-					<style>
-						#gmap_canvas img {
-							max-width: 100%!important;
-							background: none!important
-						}
-					</style>
-				</div> <a href='https://embedmap.org/'>.</a>
-				<script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=49302d5783733ca4e94480e6fd83255c4b237633'></script>
-				<script type='text/javascript'>
-					function init_map() {
-						var myOptions = {
-							zoom: 15
-							, center: new google.maps.LatLng(50.9331993, 4.371972899999946)
-							, mapTypeId: google.maps.MapTypeId.TERRAIN
-						};
-						map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-						marker = new google.maps.Marker({
-							map: map
-							, position: new google.maps.LatLng(50.9331993, 4.371972899999946)
-						});
-						infowindow = new google.maps.InfoWindow({
-							content: '<strong></strong><br>Hogesteenweg 152<br> Grimbergen<br>'
-						});
-						google.maps.event.addListener(marker, 'click', function () {
-							infowindow.open(map, marker);
-						});
-						infowindow.open(map, marker);
-					}
-					google.maps.event.addDomListener(window, 'load', init_map);
-				</script>
-			</div>
+		<nav align="center"> <div class="titel"> Welkom in restaurant Il Casale</div>
+		<div class="welkom"> <p> Restaurant Il Casale is gelegen in het hartje van Grimbergen.  <br> Sinds 1997 kan u bij ons terecht voor zowel klassiekers uit de Italiaanse keuken als voor creaties van de chef uit de Franse keuken. <br>Kom proeven van onze seizoensgebonden suggesties of typische schotels, in een warme en aangename sfeer. <br>Onze op hout gebakken pizza’s en een assortiment aan pasta’s kunnen zowel ter plaatse verbruikt of afgehaald worden.
+			<br>Il Casale beschikt over 100 zitplaatsen, met mogelijkheid tot de organisatie van banketten.
+			<br>Bij goed weer kan u in onze tuin, met prachtig zicht op de abdij van Grimbergen, terecht voor een heerlijk fris drankje, een ijsje of een uitgebreid diner. <br> Il Casale is lekker tafelen in een gezellig kader ! 
+			 <h2 class="slotwlkm">   Il Casale is een stukje Italië in Grimbergen ! </h2></p>
+</div>
 		</nav>
+		
+		
 		
 		<script>
 			function myFunction() {

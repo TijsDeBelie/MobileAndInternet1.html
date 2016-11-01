@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 @import url('https://fonts.googleapis.com/css?family=Euphoria+Script');
-html{
-	 height: 100%;
-	
-} 
+
 html	{height: 100%;}
 body {
 	
@@ -13,12 +10,12 @@ body {
 
     background-repeat: no-repeat;
     background-attachment: fixed;*/
-	background:url(Images/background.jpeg) no-repeat fixed;
+	background:url(Images/background4.JPG) no-repeat fixed;
     color: #545454;
     font-family:"Roboto";
     font-size: 18px;
     line-height: 1.5;
-    margin: 0 auto;
+    margin: 0;
 	margin-bottom: 0;
 	padding: 0px;
 	padding-bottom: 0px;
@@ -71,6 +68,8 @@ ul{
     padding: 0 20px;
     color: #fefefe;
 	z-index: 9999;
+	
+	
 }
 
 .nav-1 .logo{
@@ -125,7 +124,7 @@ ul.submenu li a{
     background: dark-grey;
 }
 
-.nav-1 ul li:hover .submenu{
+.nav-1 ul li:active .submenu{
     display: block;
 }
 
@@ -198,7 +197,7 @@ transform: translate(0px, -12px) rotate(-45deg);
         right: 0;
     }
     
-    .nav-1 ul li:hover .submenu{
+    .nav-1 ul li:active .submenu{
         display: none;
     }
     
@@ -239,7 +238,7 @@ h2:first-letter {
 	
 	font-size: 50px;
 	line-height: 1;
-	color: red;
+	color: #4B0303;
 
     font-weight: 500;
 	padding: 0;
@@ -255,7 +254,7 @@ h2 {
 	
 	font-size: 50px;
 	line-height: 1;
-	color: red;
+	color: #4B0303;
 
     font-weight: 500;
 	padding: 0;
@@ -272,8 +271,9 @@ h2 {
 .adres {
 	text-align: center;
 	font: 30px;
-	line-height: 2.5;
-	padding-bottom: 25px;
+	
+	list-style-type: none;
+	
 }
 
 
@@ -327,7 +327,8 @@ h3 {
 
 table {
 	padding: 20px;
-	margin: 20px;
+	
+	
 	
 		
 }
@@ -337,24 +338,20 @@ nav a {
 }
 /*Weekdagen*/
 .openingsuren {
-	float: left;
-	display: flex;
+	
+	 
 	
 	
-	margin-top: 50px;
-	padding-left: 10%;
-	height: auto;
-	width: auto;
+	
 }
 /*Feestdagen*/
 .openingsuren2 {
-	float: right;
-	display: flex;
-	margin-right: 20%;
-	margin-top: 50px;
-	padding-left: 50px;
-	height: auto;
-	width: auto;
+	
+	
+	
+	 
+	
+	
 	
 }
 
@@ -362,36 +359,48 @@ nav a {
 	border-style: none;
 	border-collapse: collapse;
 	text-align: justify;
+	font-family: Euphoria Script;
+	font-size: 25px;
+	font-weight: bold;
 
-	width: 95%;
+	width: 99.9%;
 	align-self: center;
 
 }
 tr {
-	border: green;
-	border-style: none;
-	border-color: green;
+	
+	
+	
 	border-collapse: collapse;
 	
 	
 }
-tr:hover {
-	background-color: green;
-	border: green;
-	border-color: green;
-	border-collapse: collapse;
+nav tr:hover { 
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	
+	
+	
 }
+
+table {
+	padding:20px;
+	
+}
+tr{ padding:20px}
 
 td {
 	padding: 10px;
-	border: green;
-	border-color: green;
+	
 }
 
-th {
+thead {
 	padding: 20px;
 	background: red;
 }
+
+
 
 
 
@@ -400,6 +409,8 @@ th {
 	
 	height: auto;
 	width: auto;
+	margin-left: 5%;
+	float: left;
 	
 }
 
@@ -412,27 +423,28 @@ th {
 	padding-top: 20px;
 	line-height: 0;
 	font-weight: bold;
-	font-size: 22px;
+	font-size: 25px;
 	
 	
 }
 
 .saus2 {
-	padding-left: 41px;
+	margin-left: 10%;
+	list-style-type: disc;
 	
 }
 
 .saus3 {
 	padding-top: 25px;
 	font-weight: bold;
-	font-size: 22px;
+	font-size: 25px;
 }
 
 .saus4 {
 	
 	padding-top: 10px;
 	font-weight: bold;
-	font-size: 22px;
+	font-size: 25px;
 	
 	
 }
@@ -458,7 +470,7 @@ th {
 	//margin: 0 auto;
   display:inline-block;
 	
-	border: 2px solid red;
+	border: 2px solid #4B0303;
 	width: 34px;
 	height: 34px;
 	border-radius: 3px;
@@ -483,7 +495,7 @@ th {
 	border-radius: 3px;
 	height: 3px;
 	width: 9px;
-	background-color: red;
+	background-color: #4B0303;
 	display: block;
 }
 .left-wing {
@@ -505,16 +517,17 @@ th {
 }
 
 .red {
-	background: red;
+	background: #4B0303;
 	font-weight:bold;
 	color: white;
+	font-size: 50px;
 
 
 
 	
 }
 .red:hover {
-	background: red;
+	background: #4B0303;
 
 	
 }
@@ -533,6 +546,108 @@ th {
 	margin-left: 10%;
 }
 
-.download {
-	margin-left: 2%;
+
+
+
+
+
+
+#adres {
+	
+	
+	line-height: 50px;
+
+	
+	color: #4B0303;
+	
+
+	
+	
+	font-family: 'Euphoria Script';
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	list-style-type: none;
+	
+	
+	
+	 
+	
 }
+
+.logoloc {
+	margin-bottom: 5%;
+	margin-top: 3%;
+	
+}
+
+.saus0 {
+	padding-bottom: 2%;
+	margin-left: 6%;
+	text-decoration: underline;
+	padding-top: 25px;
+	
+}
+/*Fotogalerij*/
+a{cursor:pointer;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.welkom {
+	font-family: 'Euphoria Script';
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	width: 83%;
+	color: #4B0303;
+	margin: auto;
+}
+
+.titel {
+	font-family: 'Euphoria Script';
+	font-size: 50px;
+	text-decoration: underline;
+	
+	font-weight: bold;
+	text-align: center;
+	width: 60%;
+	color: #4B0303;
+	margin: auto;
+	margin-top: 2%;
+}
+
+.slotwlkm {
+	font-family: 'Euphoria Script';
+	font-size: 50px;
+	line-height: 80px;
+	
+	font-weight: bold;
+	text-align: center;
+	width: 83%;
+	color: #4B0303;
+	text-transform: none;
+	margin: auto;
+}
+
+
+
+.openingsuren3 {
+	
+}
+
+.center {
+	
+  display:block;
+  justify-content:left;
+}
+

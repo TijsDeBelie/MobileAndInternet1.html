@@ -47,7 +47,7 @@ img {
     </div>
     <ul class="nav-list">
 
-		<li><a href="#">Kies uw taal/Choissisez votre langue</a>
+		<li><a href="#">Kies uw taal/Choisissez votre langue</a>
         <ul class="submenu">
                 <li><a href="ilcasale.html">NL</a> </li>
                 <li><a href="FRilcasale.html">FR</a></li>
@@ -58,39 +58,34 @@ img {
     </ul>
 </nav>
 <div class="background">
-		<div align="center">
-
-			<img class="logohome" src="Images/Logo.png" alt="logo" width="40%" height="40%"/>
-
-		<h4></h4>
-			
+	<nav  align="center">
+		<img  class="logoloc" src="Images/Il_casale.png">
 		
 		
-		 <img id="img" src="Images/header11.jpg" alt="changer" width="40%" height="40%" />
-			</div>
-       
 		
-		<script type = "text/javascript">
-          function displayNextImage() {
-              x = (x === images.length - 1) ? 0 : x + 1;
-              document.getElementById("img").src = images[x];
-          }
+		
+	 
+				<ul id="adres"> 
+				<li>Hogesteenweg 27 </li> 
+				<li>1850 Grimbergen</li><br>
+				<li>&#x260F; 02/270.02.63</li>
+				<li>&#x2709; info@ilcasale.be</li>
+				</ul>
 
-          function displayPreviousImage() {
-              x = (x <= 0) ? images.length - 1 : x - 1;
-              document.getElementById("img").src = images[x];
-          }
+		</nav>
+		
+		
+	
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-          function startTimer() {
-              setInterval(displayNextImage, 1250);
-          }
+  ga('create', 'UA-86533222-1', 'auto');
+  ga('send', 'pageview');
 
-          var images = [], x = -1;
-          
-          images[0] = "Images/header11.jpg";
-          images[1] = "Images/header7.jpg";
-		  images[2] = "Images/header1.jpg";
-      </script>
+</script>
 	   
 <div style="position:fixed;bottom:0;height:auto;margin-top:40px;width:100%;text-align:right"><strong> &copy;ITDB</strong></div>
 	</div> 

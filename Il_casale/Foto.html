@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, height=device-height" />
 		<title>Foto's Il Casale</title>
         <link rel=stylesheet href=Design.css>
-		<script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		
 
 		
@@ -25,11 +25,132 @@
 
 	});
 </script>
-	<style>
-img {
-    max-width: 100%;
+		
+		
+		
+		
+		
+<script type="text/javascript" src="http://ajax.googleapis.com/aja..."></script>
+<script type="text/javascript">
+$(function(){
+var currentIndex = 0,
+  items = $('.container div'),
+  itemAmt = items.length;
+
+function cycleItems() {
+  var item = $('.container div').eq(currentIndex);
+  items.hide();
+  item.css('display','inline-block');
 }
-</style>
+
+var autoSlide = setInterval(function() {
+  currentIndex += 1;
+  if (currentIndex > itemAmt - 1) {
+    currentIndex = 0;
+  }
+  cycleItems();
+}, 3000);
+
+$('.next').click(function() {
+  clearInterval(autoSlide);
+  currentIndex += 1;
+  if (currentIndex > itemAmt - 1) {
+    currentIndex = 0;
+  }
+  cycleItems();
+});
+
+$('.prev').click(function() {
+  clearInterval(autoSlide);
+  currentIndex -= 1;
+  if (currentIndex < 0) {
+    currentIndex = itemAmt - 1;
+  }
+  cycleItems();
+});
+});
+</script>
+		
+	<style>
+		
+		
+ .container {
+  max-width: 70%;
+  
+  margin: 0 auto;
+  
+  text-align: center;
+  position: relative;
+  z-index: -1;
+}
+.container div {
+  
+  width: 100%;
+  display: inline-block;
+  display: none;
+}
+
+img { height:85%; width: 85%;}
+
+button {
+  position: absolute;
+	
+	
+}
+
+.prev {
+ 
+	width: 70px;
+    height: 50px;
+	font-size: 25px;
+	margin-right: 5px;
+	overflow:hidden;
+	
+    
+
+    position: fixed;
+   
+    bottom: 10px;
+    left: 0;
+    right: 10%;
+
+    margin: auto;
+	z-index: 100;
+	background: #4B0303;
+	color: white;
+	clear: both;
+	
+	
+	
+}
+
+.next {
+ 
+	width: 70px;
+    height: 50px;
+	font-size: 25px;
+    
+
+    position: fixed;
+    
+    bottom: 10px;
+    left: 10%;
+    right: 0;
+
+    margin: auto;
+	z-index: 100;
+	background: #4B0303;
+	color: white;
+	clear: both;
+	
+}
+
+		
+		
+		
+
+
+		</style>
 
 	</head>
 
@@ -39,6 +160,7 @@ img {
 		
                  
    <nav class="nav-1">
+	   
 
    
     <div class="nav-mobile">
@@ -51,13 +173,14 @@ img {
   		<li><a href="Restaurant.html">ONS RESTAURANT</a></li>
         <li><a href="#">MENU</a>
             <ul class="submenu">
-                <li><a href="Menu2.html">Menu</a></li>
+                <li><a href="Menu2.html">Kaart</a></li>
 				<li><a href="Drank.html">Drank- &#38; wijnkaart</a></li>
 				<li><a href="away.html">Take-away</a></li>
             </ul>
         </li>
        <li><a href="Foto.html">FOTO'S</a></li>
 	   <li><a href="Openingsuren.html">OPENINGSUREN</a></li>
+		<li><a href="Locatie.Html">LOCATIE</a></li>
 		<li><a href="#">TAAL/LANGUE</a>
         <ul class="submenu">
                 <li><a href="ilcasale.html">NL</a> </li>
@@ -71,19 +194,117 @@ img {
 		
 		<div class="background">
         
-        
+       <section class="demo">
+  <button class="next">&#8680;</button>
+  <button class="prev">&#8678;</button>
+  <div class="container">
+    <div style="display: inline-block;">
+      <img src="Images/Galerij/il_casale%20(2).JPG"/>
+    </div>
+    <div>
+     <img src="Images/Galerij/il_casale%20(3).JPG"/>
+    </div>
+    <div>
+     <img src="Images/Galerij/il_casale%20(4).JPG"/>
+    </div>
+    <div>
+    <img src="Images/Galerij/il_casale%20(5).JPG"/>
+    </div>
+    <div>
+      <img src="Images/Galerij/il_casale%20(6).JPG"/>
+    </div>
+    <div>
+      <img src="Images/Galerij/il_casale%20(7).JPG"/>
+    </div>
+    <div>
+      <img src="Images/Galerij/il_casale%20(8).JPG"/>
+    </div>
+	  <div>
+	  <img src="Images/Galerij/il_casale%20(9).JPG"/>
+    </div>
+    <div>
+     <img src="Images/Galerij/il_casale%20(10).JPG"/>
+    </div>
+    <div>
+     <img src="Images/Galerij/il_casale%20(11).JPG"/>
+    </div>
+    <div>
+    <img src="Images/Galerij/il_casale%20(12).JPG"/>
+    </div>
+    <div>
+      <img src="Images/Galerij/il_casale%20(13).JPG"/>
+    </div>
+    <div>
+      <img src="Images/Galerij/il_casale%20(14).JPG"/>
+    </div>
+    <div>
+      <img src="Images/Galerij/il_casale%20(15).JPG"/>
+    </div>
+	  <div>
+		  <img src="Images/Galerij/il_casale%20(16).JPG"/>
+    </div>
+    <div>
+     <img src="Images/Galerij/il_casale%20(17).JPG"/>
+    </div>
+    <div>
+     <img src="Images/Galerij/il_casale%20(18).JPG"/>
+    </div>
+    <div>
+    <img src="Images/Galerij/il_casale%20(19).JPG"/>
+    </div>
+    <div>
+      <img src="Images/Galerij/il_casale%20(20).JPG"/>
+    </div>
+    <div>
+      <img src="Images/Galerij/il_casale%20(21).JPG"/>
+    </div>
+    <div>
+      <img src="Images/Galerij/il_casale%20(22).JPG"/>
+    </div>
+	  <div>
+		<img src="Images/Galerij/il_casale%20(23).JPG"/>
+    </div>
+    <div>
+     <img src="Images/Galerij/il_casale%20(24).JPG"/>
+    </div>
+    <div>
+     <img src="Images/Galerij/il_casale%20(25).JPG"/>
+    </div>
+    <div>
+    <img src="Images/Galerij/il_casale%20(26).JPG"/>
+    </div>
+    <div>
+      <img src="Images/Galerij/il_casale%20(27).JPG"/>
+    </div>
+    <div>
+      <img src="Images/Galerij/il_casale%20(28).JPG"/>
+    </div>
+    <div>
+      <img src="Images/Galerij/il_casale%20(29).JPG"/>
+    </div>
+  </div>
+</section>
 
-        <h3 align="center"> Onderstaand vind je een overzicht van enkele impressies van onze zaak, onze zaal en onze gerechten. </h3>
-        
+
+			
+			
+			
+			
+			
+			
+			
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86533222-1', 'auto');
+  ga('send', 'pageview');
+
+</script>       
    
-<div id="cp_widget_0388bf40-1d65-475f-a3e6-b455c836dbea"><h4 align="center">De fotomontage is aan het laden, even geduld aub!</h4></div><script type="text/javascript">
-var cpo = []; cpo["_object"] ="cp_widget_0388bf40-1d65-475f-a3e6-b455c836dbea"; cpo["_fid"] = "AIDAPytKkEXr";
-var _cpmp = _cpmp || []; _cpmp.push(cpo);
-(function() { var cp = document.createElement("script"); cp.type = "text/javascript";
-cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";
-var c = document.getElementsByTagName("script")[0];
-c.parentNode.insertBefore(cp, c); })(); </script><noscript>Powered by Cincopa <a href='https://www.cincopa.com/email-campaigns-integration'>Video Email</a> for Business solution.</noscript>
-        
+
 <div style="position:fixed;bottom:0;height:auto;margin-top:40px;width:100%;text-align:right"><strong> &copy;ITDB</strong></div>
 		</div> 
 	</body>
