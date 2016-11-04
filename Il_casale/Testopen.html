@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="utf-8" >
+		<meta name="description" content="IL casale is een Italiaans restaurant in Grimbergen." >
+		<meta name="keywords" content="Italiaans , Restaurant ,Grimbergen, Merchtem, Pizza">
+        <meta name="viewport" content="width=device-width, height=device-height" />
+		<title>Openingsuren Il Casale</title>
+        
+<link rel=stylesheet href=Design.css>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		
+
+		
+<script> 
+	
+    $(document).ready(function() { 
+    $('nav ul li a:not(:only-child)').click(function(e){
+        $(this).siblings('.submenu').slideToggle('slow');
+    });
+    
+    $('.nav-mobile').click(function(){
+        $('.nav-1 ul:not(.submenu)').slideToggle();
+        $(".line").toggleClass("active");
+    });
+
+	});
+	
+	
+	
+	
+	
+	
+	//hide table
+$('.tg').fadeOut(0);
+
+// $d new date
+
+var d = new Date();
+
+// $weekdays array 
+var weekday = new Array(7);
+weekday[0] = "Zondag";
+weekday[1] = "Maandag";
+weekday[2] = "Dinsdag";
+weekday[3] = "Woensdag";
+weekday[4] = "Donderdag";
+weekday[5] = "Vrijdag";
+weekday[6] = "Zaterdag";
+
+// get weekday from array
+var n = weekday[d.getDay()];
+
+// format date info
+var displayDate = (d.getDate()) + '/' + (d.getMonth() + 1) + '/' + d.getFullYear();
+
+//times to display
+
+var monday = ['/', '/', '/', '/'];
+var tuesday = ['12.00', '14.00', '18.00', '22.30'];
+var wednesday = ['12.00', '14.00', '18.00', '22.30'];
+var thursday = ['12.00', '14.00', '18.00', '22.30'];
+var friday = ['12.00', '14.00', '18.00', '22.30'];
+var saturday = ['12.00', '14.00', '18.00', '22.30'];
+var sunday = ['12.00', '14.00', '18.00', '22.30'];
+
+//text to display
+
+var day0 = 'Het restaurant is <strong>gesloten</strong>';
+var day1 = 'We zijn vandaag <strong>open</strong> van <strong> ' + monday[0] + ' tot ' + monday[1] + '</strong> en van <strong>' + monday[2] + ' tot ' + monday[3] + '</strong>';
+var day2 = 'We zijn vandaag <strong>open</strong> van <strong> ' + tuesday[0] + ' tot ' + tuesday[1] + '</strong> en van <strong>' + tuesday[2] + ' tot ' + tuesday[3] + '</strong>';
+var day3 = 'We zijn vandaag <strong>open</strong> van<strong> ' + wednesday[0] + ' tot ' + wednesday[1] + '</strong> en van  <strong>' + wednesday[2] + ' tot ' + wednesday[3] + '</strong>';
+var day4 = 'We zijn vandaag <strong>open</strong> van <strong> ' + thursday[0] + ' tot ' + thursday[1] + '</strong> en van <strong>' + thursday[2] + ' tot ' + thursday[3] + '</strong>';
+var day5 = 'We zijn vandaag <strong>open</strong> van <strong> ' + friday[0] + ' tot ' + friday[1] + '</strong> en van <strong>' + friday[2] + ' tot ' + friday[3] + '</strong>';
+var day6 = 'We zijn vandaag <strong>open</strong> van <strong> ' + saturday[0] + ' tot ' + saturday[1] + '</strong> en van <strong>' + saturday[2] + ' tot ' + saturday[3] + '</strong>';
+
+//update the clock function
+
+function updateClock() {
+  var d = new Date();
+  var currentHours = d.getHours();
+  var currentMinutes = d.getMinutes();
+  var currentSeconds = d.getSeconds();
+
+  currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes;
+  currentSeconds = (currentSeconds < 10 ? "0" : "") + currentSeconds;
+
+  var time = d.getHours() + ":" + currentMinutes + ":" + currentSeconds;
+  $('#timeholder').empty().append('<span class="time"><i class="fa fa-clock-o"></i> ' + time + ' u</span>');
+}
+
+// doc ready	
+$(document).ready(function() {
+
+  //display date and time data
+
+  $('#todayholder').append('<span class="today"> ' + n + ' <strong>' + displayDate + '</strong> </span>');
+  //$('#timeholder').append('<span class="time">'+time+' H</span>');
+  var currentHours = d.getHours();
+  var currentMinutes = d.getMinutes();
+  var currentSeconds = d.getSeconds();
+
+  currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes;
+  currentSeconds = (currentSeconds < 10 ? "0" : "") + currentSeconds;
+
+  var time = d.getHours() + ":" + currentMinutes + ":" + currentSeconds;
+  $('#timeholder').empty().append('<span class="time"><i class="fa fa-clock-o"></i> ' + time + ' u</span>');
+
+  //update clock	
+
+  setInterval('updateClock()', 1000);
+
+  //table button
+
+  $(".ophbtn").on("click", function() {
+
+    $('.tg').fadeToggle(0);
+    if ($(".ophbtn i").hasClass('fa-caret-right')) {
+      $(".ophbtn i").removeClass('fa-caret-right fa-fw').addClass('fa-times fa-fw');
+      $(".ophbtn").text('Bekijk alle openingsuren').append('<i class="fa fa-times fa-fw"></i>');
+    } else {
+      $(".ophbtn i").removeClass('fa-times fa-fw').addClass('fa-caret-right fa-fw');
+      $(".ophbtn").text('Sluit alle openingsuren').append('<i class="fa fa-caret-right fa-fw"></i>');
+    }
+  });
+
+  //append Times in table
+
+  $('.mon').append('<td class="tg-032e">MA</td><td class="tg-031e">' + monday[0] + '</td><td class="tg-031e">' + monday[1] + '</td><td class="tg-031e">' + monday[2] + '</td><td class="tg-031e">' + monday[3] + '</td>');
+  $('.tue').append('<td class="tg-032e">DI</td><td class="tg-031e">' + tuesday[0] + '</td><td class="tg-031e">' + tuesday[1] + '</td><td class="tg-031e">' + tuesday[2] + '</td><td class="tg-031e">' + tuesday[3] + '</td>');
+  $('.wen').append('<td class="tg-032e">WOE</td><td class="tg-031e">' + wednesday[0] + '</td><td class="tg-031e">' + wednesday[1] + '</td><td class="tg-031e">' + wednesday[2] + '</td><td class="tg-031e">' + wednesday[3] + '</td>');
+  $('.thu').append('<td class="tg-032e">DO</td><td class="tg-031e">' + thursday[0] + '</td><td class="tg-031e">' + thursday[1] + '</td><td class="tg-031e">' + thursday[2] + '</td><td class="tg-031e">' + thursday[3] + '</td>');
+  $('.fri').append('<td class="tg-032e">VR</td><td class="tg-031e">' + friday[0] + '</td><td class="tg-031e">' + friday[1] + '</td><td class="tg-031e">' + friday[2] + '</td><td class="tg-031e">' + friday[3] + '</td>');
+  $('.sat').append('<td class="tg-032e">ZA</td><td class="tg-031e">' + saturday[0] + '</td><td class="tg-031e">' + saturday[1] + '</td><td class="tg-031e">' + saturday[2] + '</td><td class="tg-031e">' + saturday[3] + '</td>');
+  $('.sun').append('<td class="tg-032e">ZO</td><td class="tg-031e">' + sunday[0] + '</td><td class="tg-031e">' + sunday[1] + '</td><td class="tg-031e">' + sunday[2] + '</td><td class="tg-031e">' + sunday[3] + '</td>');
+
+  //check day and display text accordingly and color day row	
+  switch (d.getDay()) {
+    case 0:
+      //sunday
+      $('#displaytextholder').append('<span class="displaytext">' + day0 + '</span>');
+      $('.sun').addClass("activeTr");
+      break;
+    case 1:
+      //monday
+      $('#displaytextholder').append('<span class="displaytext">' + day1 + '</span>');
+      $('.mon').addClass("activeTr");
+      break;
+    case 2:
+      //tuesday
+      $('#displaytextholder').append('<span class="displaytext">' + day2 + '</span>');
+      $('.tue').addClass("activeTr");
+      break;
+    case 3:
+      //wensday
+      $('#displaytextholder').append('<span class="displaytext">' + day3 + '</span>');
+      $('.wen').addClass("activeTr");
+
+      break;
+    case 4:
+      //thursday
+      $('#displaytextholder').append('<span class="displaytext">' + day4 + '</span>');
+      $('.thu').addClass("activeTr");
+      break;
+    case 5:
+      //friday
+      $('#displaytextholder').append('<span class="displaytext">' + day5 + '</span>');
+      $('.fri').addClass("activeTr");
+      break;
+    case 6:
+      //saturday
+      $('#displaytextholder').append('<span class="displaytext">' + day6 + '</span>');
+      $('.sat').addClass("activeTr")
+      break;
+  }
+
+});
+</script>	
+
+	</head>
+	
+	
+
+	<body>
+		<nav class="nav-1">
+			<img style="margin-top:0.8%" src="Images/lOGO12.png" width="11%" height="auto"/>
+
+   
+    <div class="nav-mobile">
+        <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+    </div>
+    <ul class="nav-list">
+        <li><a href="Home.html">HOME</a></li>
+  		<li><a href="Restaurant.html">ONS RESTAURANT</a></li>
+        <li><a href="#">MENU</a>
+            <ul class="submenu">
+                <li><a href="Menu2.html">Kaart</a></li>
+				<li><a href="Drank.html">Drank- &#38; wijnkaart</a></li>
+				<li><a href="away.html">Take-away</a></li>
+            </ul>
+        </li>
+       <li><a href="Foto.html">FOTO'S</a></li>
+	   <li><a href="Openingsuren.html">OPENINGSUREN</a></li>
+		<li><a href="Locatie.Html">LOCATIE</a></li>
+		<li><a href="#">TAAL/LANGUE</a>
+        <ul class="submenu">
+                <li><a href="ilcasale.html">NL</a> </li>
+                <li><a href="FRilcasale.html">FR</a></li>
+              
+            </ul>
+        </li>
+
+    </ul>
+</nav>
+		<div class="background">
+		
+			
+		
+		<div id="opclHolder">
+  <div id="opcl">
+    <div id="todayholder"></div>
+    <div id="timeholder"></div>
+    <div id="displaytextholder"></div>
+  </div> <a class="ophbtn" href="#">Sluit alle openingsuren <i class="fa fa-caret-right fa-fw"></i> </a>
+
+  <table class="tg">
+    <tr class="mon"></tr>
+    <tr class="tue"></tr>
+    <tr class="wen"></tr>
+    <tr class="thu"></tr>
+    <tr class="fri"></tr>
+    <tr class="sat"></tr>
+    <tr class="sun"></tr>
+  </table>
+</div>
+			
+			
+					
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		
+			
+			
+			
+			
+			
+			
+			
+		<div style="position:fixed;bottom:0;height:auto;margin-top:40px;width:100%;text-align:right"><strong> &copy;ITDB</strong></div>
+			</div>
+		
+
+	</body>

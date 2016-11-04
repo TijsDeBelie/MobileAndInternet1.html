@@ -23,11 +23,24 @@
 
 	});
 </script>
-		<style> img {max-width: 100%} </style>
+		
+<style> img {
+	max-width: 100%
+	} 
+      	html, body, #map_canvas {
+			margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+</style>
+		
 	</head>
 	
 	
 	<body>
+		
+		
+
 	 <nav class="nav-1">
 
    
@@ -47,7 +60,7 @@
             </ul>
         </li>
        <li><a href="Foto.html">FOTO'S</a></li>
-	   <li><a href="Openingsuren.html">OPENINGSUREN</a></li>
+	   <li><a href="Testopen.html">OPENINGSUREN</a></li>
 		<li><a href="Locatie.Html">LOCATIE</a></li>
 		<li><a href="#">TAAL/LANGUE</a>
         <ul class="submenu">
@@ -58,7 +71,7 @@
 
     </ul>
 </nav>
-		<nav  align="center">
+		<nav  style="float:left; margin-top: 4%; margin-left:5%;">
 		<img  class="logoloc" src="Images/Il_casale.png">
 		
 		
@@ -73,44 +86,10 @@
 				</ul>
 
 		</nav>
-	<nav>
-			<div align="center" style="max-width:100%; margin-top: 5%;">
-				<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyD2n4jvCptnob6YeBH5isDtJ-iwlyazuS8'></script>
-				<div style='overflow:hidden;height:400px;width:520px;border-style:solid; border-width: 10px; border-color:#4B0303'>
-					<div id='gmap_canvas' style='height:400px;width:520px;'></div>
-					<style>
-						#gmap_canvas img {
-							max-width: 100%!important;
-							background: none!important
-						}
-					</style>
-				</div> <a href='https://embedmap.org/'>.</a>
-				<script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=49302d5783733ca4e94480e6fd83255c4b237633'></script>
-				<script type='text/javascript'>
-					function init_map() {
-						var myOptions = {
-							zoom: 15
-							, center: new google.maps.LatLng(50.9331993, 4.371972899999946)
-							, mapTypeId: google.maps.MapTypeId.TERRAIN
-						};
-						map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-						marker = new google.maps.Marker({
-							map: map
-							, position: new google.maps.LatLng(50.9331993, 4.371972899999946)
-						});
-						infowindow = new google.maps.InfoWindow({
-							content: '<strong></strong><br>Hogesteenweg 152<br> Grimbergen<br>'
-						});
-						google.maps.event.addListener(marker, 'click', function () {
-							infowindow.open(map, marker);
-						});
-						infowindow.open(map, marker);
-					}
-					google.maps.event.addDomListener(window, 'load', init_map);
-				</script>
-			</div>
-		</nav>
+		
+		<div class="google-maps" style=" width=100%;">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1019.7212022387785!2d4.372122839712704!3d50.933400986583635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3e82b2a1b5f43%3A0x7b3de738c30b0ef4!2sHogesteenweg+27%2C+1850+Grimbergen!5e0!3m2!1snl!2sbe!4v1478172532918" width="600" height="600" frameborder="0" style="border:1" allowfullscreen></iframe>
 	
-	
+		</div>
 	
 	</body>
