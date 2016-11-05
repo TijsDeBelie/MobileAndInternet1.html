@@ -8,15 +8,9 @@
 		<title>Il Casale</title>
         
 <link rel=stylesheet href=Design.css>
-		<script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		
-<script type="text/javascript">
-<!--
-if (screen.width <= 900) {
-document.location = "restaurant2.html";
-}
-//-->
-</script>
+
 		
 <script> 
 	
@@ -33,6 +27,14 @@ document.location = "restaurant2.html";
 	});
 		</script>
 		<style>
+			
+			
+			
+			
+			
+			
+			
+			
 img {
     max-width: 100%;
 }
@@ -42,10 +44,25 @@ img {
 	
 
 	<body>
-
 		
-	<nav class="nav-1">
-		<img style="margin-top:0.8%" src="Images/lOGO12.png" width="168px" height="auto"/>
+		
+		
+	<style type="text/css">
+    #warning-message { display: none;  justify-content: center; color: black;font-weight: bold; font-size: 30px; line-height: 50px;}
+    @media only screen and (orientation:landscape){
+        #wrapper { display:none; }
+        #warning-message { display:block; }
+    }
+    @media only screen and (orientation:portrait){
+        #warning-message { display:none; }
+    }
+</style>
+
+
+
+<div id="wrapper">
+    <nav class="nav-1">
+		<img style="margin-top:0.8%" src="Images/lOGO12.png" width="168px" height="auto" alt="."/>
 
    
     <div class="nav-mobile">
@@ -77,20 +94,8 @@ img {
     </ul>
 </nav>
 		
-		<div id="container">
-    <div id="floated-imgs">
-        <img src="Images/header1.jpg">
 		
-        <img src="Images/header1.jpg">
-		<img src="Images/header1.jpg">
-		
-        <img src="Images/header1.jpg">
-		<img src="Images/header1.jpg">
-		
-        <img src="Images/header1.jpg">
-		<img src="Images/header1.jpg">
-    </div>
-    <div class="personeel">
+    <div class="personeel-m">
 <h1 style="text-decoration: underline;"> Over ons :</h1>
 		
 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec placerat est. Duis id consectetur dolor. Donec et dictum urna, vitae sollicitudin justo. Suspendisse eget efficitur mi, at ornare ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis porttitor luctus risus eu molestie. Donec eu massa nec lacus aliquam mattis non sit amet elit.
@@ -120,7 +125,7 @@ Maecenas nec nulla ullamcorper, egestas libero non, finibus lorem. Nulla facilis
 </p>
 	</div>
 
-</div>
+
 		
 	
  
@@ -128,6 +133,23 @@ Maecenas nec nulla ullamcorper, egestas libero non, finibus lorem. Nulla facilis
 		
 		
 <div style="position:fixed;bottom:0;height:auto;margin-top:40px;width:100%;text-align:right"><strong> &copy;ITDB</strong></div>
+</div>
+<div id="warning-message">
+	* Deze pagina kan enkel worden weergegeven in portret-stand, gelieve je toestel te draaien en de pagina opnieuw te laden. <br>
+    * This page is only viewable in portrait mode, please turn your mobile device and refresh this page. <br>
+	
+	
+	<center> <img src="Images/portrait.png" alt="." /> </center>
+</div>	
+		
+		
+		
+		
+		
+		
+
+		
+	
 
 	</body>
 </html>

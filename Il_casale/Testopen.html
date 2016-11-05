@@ -54,7 +54,7 @@ var n = weekday[d.getDay()];
 // format date info
 var displayDate = (d.getDate()) + '/' + (d.getMonth() + 1) + '/' + d.getFullYear();
 
-//times to display
+//De openinsguren: indien de uren wijzigen dit wijzigen
 
 var monday = ['/', '/', '/', '/'];
 var tuesday = ['12.00', '14.00', '18.00', '22.30'];
@@ -67,12 +67,12 @@ var sunday = ['12.00', '14.00', '18.00', '22.30'];
 //text to display
 
 var day0 = 'Het restaurant is <strong>gesloten</strong>';
-var day1 = 'We zijn vandaag <strong>open</strong> van <strong> ' + monday[0] + ' tot ' + monday[1] + '</strong> en van <strong>' + monday[2] + ' tot ' + monday[3] + '</strong>';
-var day2 = 'We zijn vandaag <strong>open</strong> van <strong> ' + tuesday[0] + ' tot ' + tuesday[1] + '</strong> en van <strong>' + tuesday[2] + ' tot ' + tuesday[3] + '</strong>';
-var day3 = 'We zijn vandaag <strong>open</strong> van<strong> ' + wednesday[0] + ' tot ' + wednesday[1] + '</strong> en van  <strong>' + wednesday[2] + ' tot ' + wednesday[3] + '</strong>';
-var day4 = 'We zijn vandaag <strong>open</strong> van <strong> ' + thursday[0] + ' tot ' + thursday[1] + '</strong> en van <strong>' + thursday[2] + ' tot ' + thursday[3] + '</strong>';
-var day5 = 'We zijn vandaag <strong>open</strong> van <strong> ' + friday[0] + ' tot ' + friday[1] + '</strong> en van <strong>' + friday[2] + ' tot ' + friday[3] + '</strong>';
-var day6 = 'We zijn vandaag <strong>open</strong> van <strong> ' + saturday[0] + ' tot ' + saturday[1] + '</strong> en van <strong>' + saturday[2] + ' tot ' + saturday[3] + '</strong>';
+var day1 = 'We zijn vandaag <strong>open</strong> van <strong> ' + monday[0] + 'u tot ' + monday[1] + 'u</strong> en van <strong>' + monday[2] + 'u tot ' + monday[3] + '</strong>';
+var day2 = 'We zijn vandaag <strong>open</strong> van <strong> ' + tuesday[0] + 'u tot ' + tuesday[1] + 'u</strong> en van <strong>' + tuesday[2] + 'u tot ' + tuesday[3] + '</strong>';
+var day3 = 'We zijn vandaag <strong>open</strong> van<strong> ' + wednesday[0] + 'u tot ' + wednesday[1] + 'u</strong> en van  <strong>' + wednesday[2] + 'u tot ' + wednesday[3] + 'u </strong>';
+var day4 = 'We zijn vandaag <strong>open</strong> van <strong> ' + thursday[0] + 'u tot ' + thursday[1] + 'u</strong> en van <strong>' + thursday[2] + 'u tot ' + thursday[3] + 'u </strong>';
+var day5 = 'We zijn vandaag <strong>open</strong> van <strong> ' + friday[0] + 'u tot ' + friday[1] + 'u</strong> en van <strong>' + friday[2] + 'u tot ' + friday[3] + '</strong>';
+var day6 = 'We zijn vandaag <strong>open</strong> van <strong> ' + saturday[0] + 'u tot ' + saturday[1] + 'u</strong> en van <strong>' + saturday[2] + 'u tot ' + saturday[3] + 'u </strong>';
 
 //update the clock function
 
@@ -86,7 +86,7 @@ function updateClock() {
   currentSeconds = (currentSeconds < 10 ? "0" : "") + currentSeconds;
 
   var time = d.getHours() + ":" + currentMinutes + ":" + currentSeconds;
-  $('#timeholder').empty().append('<span class="time"><i class="fa fa-clock-o"></i> ' + time + ' u</span>');
+  $('#timeholder').empty().append('<span class="time"><i class="fa fa-clock-o"></i> ' + time + ' </span>');
 }
 
 // doc ready	
@@ -104,7 +104,7 @@ $(document).ready(function() {
   currentSeconds = (currentSeconds < 10 ? "0" : "") + currentSeconds;
 
   var time = d.getHours() + ":" + currentMinutes + ":" + currentSeconds;
-  $('#timeholder').empty().append('<span class="time"><i class="fa fa-clock-o"></i> ' + time + ' u</span>');
+  $('#timeholder').empty().append('<span class="time"><i class="fa fa-clock-o"></i> ' + time + ' </span>');
 
   //update clock	
 
@@ -183,7 +183,7 @@ $(document).ready(function() {
 
 	<body>
 		<nav class="nav-1">
-			<img style="margin-top:0.8%" src="Images/lOGO12.png" width="11%" height="auto"/>
+			<img style="margin-top:0.8%" src="Images/lOGO12.png" width="168px" height="auto"/>
 
    
     <div class="nav-mobile">
@@ -202,7 +202,7 @@ $(document).ready(function() {
             </ul>
         </li>
        <li><a href="Foto.html">FOTO'S</a></li>
-	   <li><a href="Openingsuren.html">OPENINGSUREN</a></li>
+	   <li><a href="Testopen.html">OPENINGSUREN</a></li>
 		<li><a href="Locatie.Html">LOCATIE</a></li>
 		<li><a href="#">TAAL/LANGUE</a>
         <ul class="submenu">
