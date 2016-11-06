@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Euphoria+Script');
+body,html {
+	
+		background: green;
+		
+}
+
+p {  	font-family:"Roboto";
+    	font-size: 18px;
+		background: #3d3d3d;
+	 	line-height: 60px;
+		display: block;
+	 	margin-left: 10px;
+		padding: 20px;
+		margin-right: 10px;
+	
+	
+}
+
+
+
+
+h1,h2 {
+		font-family:"Roboto";
+    	font-size: 25px;
+		display: block;
+	 	margin-left: 10px;
+		color:white;
+}
+
+h3 { font-family:"Roboto";
+    	font-size: 25px;
+		display: block;
+	 	margin-left: 10px;}
+h1:first-letter,h2:first-letter{
+	font-family: 'Euphoria Script', cursive;
+	text-transform: uppercase;
+	font-size: 70px;
+
+
+
+
+
+
