@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="utf-8" >
+		<meta name="description" content="IL casale is een Italiaans restaurant in Grimbergen." >
+		<meta name="keywords" content="Italiaans , Restaurant ,Grimbergen, Merchtem, Pizza">
+        <meta name="viewport" content="width=device-width, height=device-height" />
+		<title>Il Casale</title>
+        
+		<link rel=stylesheet href=css/Design.css>
+		<link rel=stylesheet href=css/Background.css>
+		<link rel=stylesheet href=css/navbar.css>
+		<script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		
+
+		
+<script>	
+    $(document).ready(function() { 
+    $('nav ul li a:not(:only-child)').click(function(e){
+        $(this).siblings('.submenu').slideToggle('slow');
+    });
+    
+    $('.nav-mobile').click(function(){
+        $('.nav-1 ul:not(.submenu)').slideToggle();
+        $(".line").toggleClass("active");
+    });
+
+	});
+</script>
+		
+		
+<style>
+	body{ 
+	background:url(Images/zwartwitgevel.jpg) no-repeat fixed;
+	background-size: 100% 100%;
+	}
+	
+	img {
+    max-width: 100%;
+	}
+</style>
+
+</head>
+	
+
+		<body>
+	<header>
+		<nav class="nav-1">
+			<div class="nav-mobile">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+			<ul class="nav-list">
+				<li><a href="ilcasale.html">NL</a></li>
+				<li><a href="FRilcasale.html">FR</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		
+			<nav> <img class="logoloc" src="Images/Il_casale.png" alt="logo">
+				<ul id="adres">
+					<li>Hogesteenweg 27 </li>
+					<li>1850 Grimbergen</li>
+					<li>&#x260F; 02/270.02.63</li>
+					<li>&#x2709; info@ilcasale.be</li>
+					<li class="spatie"> &#8364; <img src="http://www.credit-card-logos.com/images/multiple_credit-card-logos-1/credit_card_logos_15.gif" alt="betaalmethoden" width="176" height="35" /> </li>
+				</ul>
+			</nav>
+		
+	</section>
+	<footer>
+		<a class="facebook" target="_blank" title="Vind ons op Facebook" href="facebook.html"><img alt="Vind ons op facebook" src="//login.create.net/images/icons/user/facebook-b_130x50.png"></a>
+		<div style="position:fixed;bottom:0;height:auto;margin-top:40px;width:100%;text-align:right"><strong> &copy;ITDB</strong></div>
+		
+	</footer>
+	<script>
+		//google analytics script
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o)
+				, m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+		ga('create', 'UA-86533222-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</body>
+
+</html>
