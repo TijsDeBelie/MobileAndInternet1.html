@@ -1,12 +1,3 @@
-body{}
-
-
-*, *:before, *:after{
-    box-sizing: border-box;
-}
-
-
-
 @media screen and (max-width: 800px){
     .nav-1 ul li{
         display: block;
@@ -740,6 +731,9 @@ bottom: 0px;
 
 .spatie {
 	line-height: 2;
+}
+*, *:before, *:after{
+    box-sizing: border-box;
 }
 
 
