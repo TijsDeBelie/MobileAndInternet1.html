@@ -23,4 +23,7 @@ Basis versie site gemaakt met behulp van w3schools
 <br> Donderdag 03/11 : Facebook.html aangemaakt en het facebooklogo op Home.html gezet
 <br> Vrijdag 04/11 : Logboek bijgewerkt en beoordeling van Margo Anckaert gedaan. 
 <br> Zaterdag 06/11 : Afspraak met Il casale om site voor te stellen
+<br> Zondag 20/11 : Nog steeds geen extra informatie ontvangen, zelfs na herhaaldelijke mails
+<br> Zondag 20/11 : Mappenstructuur bijgewerkt, code opgeschoond
+
 
