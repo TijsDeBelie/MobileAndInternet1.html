@@ -1,118 +1,52 @@
-@media screen and (max-width: 800px){
-    .nav-1 ul li{
-        display: block;
-    }
-    
-    .nav-1 ul{
-        float: none;
-        display: none;
-    }
-    
-    .nav-list{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        text-align: center;
-    }
-	
-	
-    
-    .submenu{
-        position: relative;
-        left: 0;
-        right: 0;
-    }
-    
-    .nav-1 ul li:active .submenu{
-        display: none;
-    }
-    
-    .nav-1 .logo {
-        width: 50%;
-        text-align: center;
-    }
-    
-    .nav-1 .nav-mobile {
-        display: block;
-    }
-}
-
-
-
-
 
 
 .logo {
-    align-self: center;
+	align-self: center;
 	text-align: center;
-	color:red;
+	color: red;
 }
 
-
-h1:first-letter{
+h1:first-letter {
 	font-family: 'Euphoria Script', cursive;
 	text-transform: uppercase;
-	font-size: 90px;
+	font-size:calc(40px + 3vw);
 }
-h1{
+
+h1 {
 	font-family: 'Euphoria Script', cursive;
+	vertical-align: middle;
 	text-transform: lowercase;
-	font-size: 90px;
-
+	
+	font-size:calc(40px + 3vw);
 }
-
 
 h2 {
 	margin-top: 0;
-
-	
-	
 	font-size: 70px;
 	line-height: 1;
 	color: #4B0303;
-
-    font-weight: 500;
+	font-weight: 500;
 	padding: 0;
 	top: 0;
 	font-family: 'Euphoria Script', cursive;
-	
-
 }
-
-
-
-
 
 .adres {
 	text-align: center;
 	font: 30px;
-	
 	list-style-type: none;
-	
 }
-
-
-
 
 .Menukeuze {
 	background-color: grey;
 	display: flex;
 	padding: 10px;
 	text-decoration: none;
-
-	
 }
-
-
 
 h3 {
 	color: red;
-
 }
-
-
-
 
 .personeel {
 	margin-left: 5%;
@@ -121,29 +55,15 @@ h3 {
 	width: 50%;
 	color: Black;
 	text-align: center;
-	
-	
 }
 
 table {
 	padding: 20px;
-	
-	
-	
-		
 }
 
 nav a {
-	 color: PapayaWhip;
+	color: PapayaWhip;
 }
-
-	
-	
-	 
-	
-	
-	
-
 
 #pricelist {
 	margin-top: 2%;
@@ -154,39 +74,31 @@ nav a {
 	font-size: 35px;
 	font-weight: bold;
 	color: #4B0303;
-
 	width: 99.9%;
 	align-self: center;
+}
 
-}
 tr {
-	
-	
-	
 	border-collapse: collapse;
-	
-	
 }
-nav tr:hover { 
+
+nav tr:hover {
 	border-style: solid;
 	border-width: 2px;
 	border-color: black;
-	
-	
-	
 }
 
 table {
-	padding:20px;
-	
+	padding: 20px;
 }
-tr{ padding:20px}
+
+tr {
+	padding: 20px
+}
 
 td {
 	padding: 10px;
 	padding-left: 20px;
-	
-	
 }
 
 thead {
@@ -194,36 +106,22 @@ thead {
 	background: red;
 }
 
-
-
-
-
 .logohome {
 	margin-top: 2%;
-	
 	height: auto;
 	width: auto;
 	margin-left: 5%;
 	float: left;
-	
 }
-
-
-
-
 
 .saus {
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 25px;
-	
-	
 }
 
 .saus2 {
-	
 	list-style-type: none;
-	
 }
 
 .saus3 {
@@ -236,38 +134,27 @@ thead {
 }
 
 .saus4 {
-	
-	
 	padding-bottom: 2%;
 	margin-bottom: 2%;
-	
-	
 }
 
-
-
-	
-	
-
-
-
 .wrap {
-	//margin: 0 auto;
-  display:inline-block;
-	
+	/*margin: 0 auto;*/
+	display: inline-block;
 	border: 2px solid #4B0303;
 	width: 34px;
 	height: 34px;
 	border-radius: 3px;
-	//display: block;
+	/*display: block;*/
 	position: absolute;
 	top: 50%;
 	margin-top: -17px;
 	right: 5px;
 	text-align: center;
-  margin-bottom:3px;
-  box-shadow: 0px 1px 1px rgba(0,0,0,0.0), inset 0px 1px 1px rgba(0,0,0,0.0);
+	margin-bottom: 3px;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.0), inset 0px 1px 1px rgba(0, 0, 0, 0.0);
 }
+
 .arrow {
 	margin: 0 auto;
 	display: block;
@@ -275,6 +162,7 @@ thead {
 	width: 25px;
 	height: 25px;
 }
+
 .left-wing,
 .right-wing {
 	border-radius: 3px;
@@ -283,12 +171,14 @@ thead {
 	background-color: #4B0303;
 	display: block;
 }
+
 .left-wing {
 	left: 4px;
 	position: relative;
 	display: inline-block;
 	transform: rotate(-45deg);
 }
+
 .right-wing {
 	right: 4px;
 	position: relative;
@@ -296,22 +186,17 @@ thead {
 	transform: rotate(45deg);
 }
 
-
 .right {
-	 text-align:right;
+	text-align: right;
 }
 
 .red {
 	background-color: #2B0000;
-	font-weight:bold;
+	font-weight: bold;
 	color: beige;
 	font-size: 50px;
-
-
-
 	
 }
-
 
 .space {
 	padding-top: 50px;
@@ -321,47 +206,23 @@ thead {
 	margin-left: 5%;
 }
 
-
-
 .gerecht {
-	
 	text-align: center;
 	margin-top: 2%;
 	padding-top: 2%;
 	padding-bottom: 2%;
 	margin-bottom: 2%;
-	
-
-	
-	
 }
 
-
-
-
-
-
-
 #adres {
-	
-	
 	line-height: 50px;
 	color: #4B0303;
 	margin: auto;
-	
-
-	
-	
 	font-family: 'Euphoria Script';
 	font-size: 50px;
 	font-weight: bold;
 	text-align: center;
 	list-style-type: none;
-	
-	
-	
-	 
-	
 }
 
 .logoloc {
@@ -369,36 +230,24 @@ thead {
 	padding-bottom: 2%;
 	padding-top: 2%;
 	margin: auto;
-
-	
 }
 
 .saus0 {
 	padding-bottom: 2%;
-	text-align: center; 
-	font-family: 'Euphoria Script'; 
-	font-size: 35px; 
-	font-weight: bold; 
-	 
+	text-align: center;
+	font-family: 'Euphoria Script';
+	font-size: 35px;
+	font-weight: bold;
 	color: #4B0303;
 	text-decoration: underline;
-	
-	
 }
+
+
 /*Fotogalerij*/
-a{cursor:pointer;}
 
-
-
-
-
-
-
-
-
-
-
-
+a {
+	cursor: pointer;
+}
 
 .welkom {
 	font-family: 'Euphoria Script';
@@ -407,15 +256,13 @@ a{cursor:pointer;}
 	text-align: center;
 	width: 100%;
 	color: #4B0303;
-	
 }
 
 .titel {
-	display:block;
+	display: block;
 	font-family: 'Euphoria Script';
 	font-size: 50px;
 	text-decoration: underline;
-	
 	font-weight: bold;
 	text-align: center;
 	width: 60%;
@@ -428,7 +275,6 @@ a{cursor:pointer;}
 	font-family: 'Euphoria Script';
 	font-size: 50px;
 	line-height: 80px;
-	
 	font-weight: bold;
 	text-align: center;
 	width: 83%;
@@ -437,221 +283,201 @@ a{cursor:pointer;}
 	margin: auto;
 }
 
-
-
-.openingsuren3 {
-	
-}
+.openingsuren3 {}
 
 .center {
-	
-  display:block;
-  justify-content:left;
+	display: block;
+	justify-content: left;
 }
 
 
-/*testversie vanaf hier */
 
 
 #opclHolder {
-	  width: 600px;
+	width: 600px;
 	max-width: 100%;
-	
-	  margin: 0 auto;
-	  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	  margin-top: 4%;
-	  font-size: 18px;
-	  background-color: beige;
-	  line-height:15px;
-	  
-	}
-	
-	#opcl {
-	  text-align: center;
-	
-	  color: beige;
-	  font-family: "Helvetica Neue", sans-serif;
-	}
-	
-	.today {
-	  text-transform: uppercase;
-	  font-weight: 400;
-	  font-size: 24px;
-	}
-	
-	.time {
-	  font-size: 28px;
-	  width: 100%;
-	  display: block;
-	  padding-top: 16px;
-	  padding-bottom: 16px;
-	}
-	
-	#todayholder {
-	  border-bottom: 1px solid #4B0303;
-	  padding-bottom: 16px;
-	  background-color: #4B0303;
-	  padding-top: 16px;
-	  
-	}
-	
-	#timeholder {
-	  border-bottom: 1px solid #4B0303;
-	  background-color: #4B0303;
-	}
-	
-	#displaytextholder {
-	  padding-top: 16px;
-	  font-size: 18px;
-	  padding-bottom: 16px;
-		
-	 
-	  color: #4B0303;
-	}
-	
-	.displaytext strong {
-	  color: #4B0303;
-	}
-	
-	
-	
-	.fa-caret-right {
-	  position: relative;
-	  top: 1px;
-	}
-	
-	.tg {
-	  border-collapse: collapse;
-	  border-spacing: 0;
-	  margin: 0px auto;
-	  width: 100%;
-	  margin-right: 16px;
-	  margin-top: 16px;
-		
-	  
-	  text-align: center;
-	  background-color: beige;
-	}
-	
-	.tg tr:last-child {
-	  border-bottom: none;
-	}
-	
-	.tg td {
-	  font-family: Arial, sans-serif;
-	  font-size: 14px;
-	  padding: 10px 5px;
-	  margin-top: 15px;
-	  border-style: solid;
-	  border-width: 0px;
-	  overflow: hidden;
-	  word-break: normal;
-	}
-	
-	.tg-031e {
-	  color: #4B0303;
-	  font-weight: bold;
-		
-	}
-	
-	.tg-032e {
-	  color: #4B0303;
-		font-weight: bold;
-		
-	}
-	
-	.tg tr {
-	  border-bottom: 1px solid #4B0303;
-		
-	}
-	
-	.fa-clock-o {
-	  font-size: 28px;
-	  color: #4B0303;
-		
-	}
-	
-	tr.activeTr {
-	  background-color:  #9A3434;
-	  font-weight: 700;
-		
-	  
-	}
-	
-	.activeTr .tg-032e {
-	  color: beige;
-		
-	}
-	
-	.activeTr .tg-031e {
-	  color: beige;
-		
-	}
+	margin: 0 auto;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin-top: 4%;
+	font-size: 18px;
+	background-color: beige;
+	line-height: 15px;
+}
 
+#opcl {
+	text-align: center;
+	color: beige;
+	font-family: "Helvetica Neue", sans-serif;
+}
 
+.today {
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 24px;
+}
 
-div.ext-box { display: table; width:100%;}
-div.int-box { display: table-cell; vertical-align: middle; }
-embed, object, iframe{max-width: 95%;
+.time {
+	font-size: 28px;
+	width: 100%;
+	display: block;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
 
-margin-right: 2%;
-margin-left: 2%;
-margin-top: 4%;
-	
-border-style: solid;
-border-width: 10px;
-border-color: #4B0303;}
+#todayholder {
+	border-bottom: 1px solid #4B0303;
+	padding-bottom: 16px;
+	background-color: #4B0303;
+	padding-top: 16px;
+}
 
+#timeholder {
+	border-bottom: 1px solid #4B0303;
+	background-color: #4B0303;
+}
+
+#displaytextholder {
+	padding-top: 16px;
+	font-size: 18px;
+	padding-bottom: 16px;
+	color: #4B0303;
+}
+
+.displaytext strong {
+	color: #4B0303;
+	line-height: 2;
+}
+
+.fa-caret-right {
+	position: relative;
+	top: 1px;
+}
+
+.tg {
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 0px auto;
+	width: 100%;
+	margin-right: 16px;
+	margin-top: 16px;
+	text-align: center;
+	background-color: beige;
+}
+
+.tg tr:last-child {
+	border-bottom: none;
+}
+
+.tg td {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	padding: 10px 5px;
+	margin-top: 15px;
+	border-style: solid;
+	border-width: 0px;
+	overflow: hidden;
+	word-break: normal;
+}
+
+.tg-031e {
+	color: #4B0303;
+	font-weight: bold;
+}
+
+.tg-032e {
+	color: #4B0303;
+	font-weight: bold;
+}
+
+.tg tr {
+	border-bottom: 1px solid #4B0303;
+}
+
+.fa-clock-o {
+	font-size: 28px;
+	color: #4B0303;
+}
+
+tr.activeTr {
+	background-color: #9A3434;
+	font-weight: 700;
+}
+
+.activeTr .tg-032e {
+	color: beige;
+}
+
+.activeTr .tg-031e {
+	color: beige;
+}
+
+div.ext-box {
+	display: table;
+	width: 100%;
+}
+
+div.int-box {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+embed,
+object,
+iframe {
+	max-width: 95%;
+	margin-right: 2%;
+	margin-left: 2%;
+	margin-top: 4%;
+	border-style: solid;
+	border-width: 10px;
+	border-color: #4B0303;
+}
 
 .text div {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 
 .text {
-	
 	margin-top: 300px;
-	
 	max-width: 100%;
+	padding: 0;
 	height: auto;
 	margin: auto;
-	
 }
 
 .comment {
-
 	max-width: 100%;
 	height: auto;
-	
-	
 }
 
 .comment div {
-  position: relative;
-  top: 30%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+	position: relative;
+	top: 30%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
-
 
 .btn-group {
 	
 	overflow: hidden;
-	display:block;
+	display: block;
+	
+	
+	
 }
-
-
 
 #floated-imgs {
 	float: right;
 	margin-right: 2%;
 	margin-top: 5%;
 }
-#floated-imgs img{
+
+#floated-imgs img {
 	display: block;
 	margin-bottom: 30px;
 }
@@ -660,8 +486,6 @@ border-color: #4B0303;}
 	overflow: hidden;
 	max-width: 100%;
 }
-
-
 
 .personeel-m {
 	margin-left: 5%;
@@ -672,9 +496,6 @@ border-color: #4B0303;}
 	text-align: center;
 }
 
-
-
-
 .gerecht2 {
 	padding-bottom: 2%;
 	margin-bottom: 2%;
@@ -684,19 +505,14 @@ border-color: #4B0303;}
 	background: #9A3434;
 }
 
-
-
 #opclHolder2 {
 	width: 600px;
 	max-width: 100%;
-	
-	  margin: 0 auto;
-	  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	  margin-top: 2%;
-	
-	  
-	  font-size: 18px;
-	  background-color: #4B0303;
+	margin: 0 auto;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin-top: 2%;
+	font-size: 18px;
+	background-color: #4B0303;
 }
 
 .openingsurentitel {
@@ -705,35 +521,83 @@ border-color: #4B0303;}
 	padding-top: 2%;
 	font-size: 35px;
 	color: beige;
-	
 }
 
 .betaal {
-position: absolute;
-left: 0px;
-bottom: 0px;
-	
-	
-		
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
 }
 
- div.outer { position: relative;  }
- div.outer img { position: absolute; right: 0; bottom: 0; }
+div.outer {
+	position: relative;
+}
 
-
+div.outer img {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
 
 .download {
 	display: block;
 	margin: auto;
 	vertical-align: middle;
-	min-width: 7%;
+	width: 60px;
+	
 }
 
 .spatie {
 	line-height: 2;
 }
-*, *:before, *:after{
-    box-sizing: border-box;
+
+
+
+.afbeelding {
+	max-width:220px;
+	height:auto;
+	
+	
+	padding-bottom: 2%;
+	
+	
+}
+
+.stop {
+	background: #4B0303;
+	position: fixed;
+	height: 50px;
+	width: 50px;
+	left: 70px;
+	bottom: 0%;		
+	margin: auto;
+	z-index: 100;
+	color: white;
+			
 }
 
 
+
+.fast {
+	background: #4B0303;
+	position: fixed;
+	height: 50px;
+	width: 50px;
+	left: 0px;
+	bottom: 50px;		
+	margin: auto;
+	z-index: 100;
+	color: white;
+}
+
+.slow {
+	background: #4B0303;
+	position: fixed;
+	height: 50px;
+	width: 50px;
+	left: 140px;
+	bottom: 50px;		
+	margin: auto;
+	z-index: 100;
+	color: white;
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="fr">
 
 <head>
 	<meta charset="utf-8" >
@@ -11,67 +11,110 @@
 	<link rel="stylesheet" href="css/Background.css">
 	<link rel="stylesheet" href="css/navbar.css">
 	<script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src="Javascript/navbar.js"></script>			
-
-
-
-	<style>
-	body {
-		background: url(Images/wijn.jpg) no-repeat fixed;
-		background-size: 100% 100%;
-	}
-	
-	div.container {
-		width: 100%;
-		margin: 0px;
-	}
-	
-	div.header {
 		
-		height: 120px;
-		text-align: center;
-		color: beige;
-		background-color: #2B0000;
-		clear: left;
-		position: relative;
+
+		
+<script> 
+	
+    $(document).ready(function() { 
+    $('nav ul li a:not(:only-child)').click(function(e){
+        $(this).siblings('.submenu').slideToggle('slow');
+    });
+    
+    $('.nav-mobile').click(function(){
+        $('.nav-1 ul:not(.submenu)').slideToggle();
+        $(".line").toggleClass("active");
+    });
+
+	});
+</script>
+	<style>
+		
+		
+		body { 
+		
+		background:url(Images/wijn.jpg) no-repeat fixed;
+			background-size: 100% 100%;
+		
+		
+		
+		}
+div.container {
+    width: 100%;
+    margin: 0px;
+	
+
+  
+}
+
+	
+div.header{
+ 
+	
+	
+	height: 120px;
+	
+	text-align: center;
+    color: beige;
+    background-color: #2B0000;
+    clear: left;
+	position: relative;
+	
+	
+}
+	div.footer{
+	background-color: gray;
+		clear: left;}
+
+.header h1 {
+    padding: 0;
+    margin: 2%;
+}
+
+div.left {
+    text-align: center;    
+	font-family: 'Euphoria Script';
+	font-size: 35px;
+	font-weight: bold;
+	line-height: 50px;
+	color: #4B0303;
+	
+	
+
+}
+
+
+	
+
+	
+img {
+   
+   	margin: 0 0 10px 10px;
+	max-width: 100%;
+	
+
+	
+}
+
+h2 {
+	margin-top: 2%;
+	padding-top: 2%;
+	margin-bottom: 0;
+	font-weight: bold;
+	text-align: center;
+	
+	
+	}
+
+a {
+	text-decoration: none;
+	color: white;
 	}
 	
-	div.footer {
-		background-color: gray;
-		clear: left;
-	}
+
+
 	
-	.header h1 {
-		padding: 0;
-		margin: 2%;
-	}
-	
-	div.left {
-		text-align: center;
-		font-family: 'Euphoria Script';
-		font-size: 35px;
-		font-weight: bold;
-		line-height: 50px;
-		color: #4B0303;
-	}
-	
-	img {
-		margin: 0 0 10px 10px;
-		max-width: 100%;
-	}
-	
-	h2 {
-		margin-top: 2%;
-		padding-top: 2%;
-		margin-bottom: 0;
-		font-weight: bold;
-		text-align: center;
-	}
-	
-	a {
-		text-decoration: none;
-		color: white;
-	}
+
 </style>
 
 	
@@ -90,30 +133,26 @@
           <div class="line"></div>
           <div class="line"></div>
     </div>
-    <ul class="nav-list">
-        <li><a href="index.html">HOME</a></li>
-  		<li><a href="ilcasale.html">ONS RESTAURANT</a></li>
-        <li><a class="current" href="#">MENU</a>
-            <ul class="submenu">
-                <li><a href="Menu2.html"> Kaart</a></li>
-				<li><a class="current" href="Drank.html">Wijnkaart</a></li>
-				<li><a href="away.html">Take-away</a></li>
-            </ul>
-        </li>
-       <li><a href="Foto.html">FOTO'S</a></li>
-	   <li><a href="Openingsuren.html">OPENINGSUREN</a></li>
-		<li><a href="Locatie.Html">LOCATIE</a></li>
-		
-                <li><a href="drank.html">NL</a> </li>
-		<li><a href="FRdrank.html">FR</a></li>
-
+        <ul class="nav-list">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="FRilcasale.html">NOTRE RESTAURANT</a></li>
+				<li><a class="current" href="#">MENU</a>
+					<ul class="submenu">
+						<li><a href="FRMenu2.html"> Carte</a></li>
+						<li><a class="current" href="FRDrank.html">Vins</a></li>
+						<li><a href="FRaway.html">Take-away</a></li>
+					</ul>
+				</li>
+				<li><a href="FRFoto.html">PHOTOS</a></li>
+				<li><a href="FRopeningsuren.html">HEURES D'OUVERTURE</a></li>
+				<li><a href="FRLocatie.Html">LOCATION</a></li>
+				<li><a href="Drank.html">NL</a> </li>
+				<li><a href="FRdrank.html">FR</a></li>
     </ul>
 </nav>
 	</header>
 	<section>
 			
-	
-	
 	
 <div class="container">
 <div class="header"><h1 class="header">VINO BIANCO</h1></div>
@@ -148,7 +187,8 @@
 	
 	</div>
 	
-<div class="container">
+	
+	<div class="container">
 <div class="header"><h1 class="header">VINO ROSSO</h1></div>
 <div class="left"><ul  class="gerecht">
 <li>Casale, 25 cl / 50 cl / 100 cl</li>
@@ -175,7 +215,7 @@
 </ul>
 </div>
 
-</div>	
+</div>
 	
 </section>	
 	<footer>

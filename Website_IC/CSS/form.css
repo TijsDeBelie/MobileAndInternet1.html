@@ -31,6 +31,24 @@ body:before {
   bottom:0;
   background: rgba(253, 221, 161, 0.5);
 }
+
+.form-control {
+    display:inline-flex;
+   	width: 100%;
+    height: 34px;
+    padding: 0.5em;
+	margin: 0 0 0.1em;
+	
+	
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+   
+}
 h2 {
   
 	margin-top: 0;
@@ -49,6 +67,8 @@ h2 {
 
 }
 
+
+
 }
 #contact-form {
   max-width: 1208px;
@@ -57,13 +77,16 @@ h2 {
 }
 #contact, label, input[name="submit"] {
   position: relative;
+  margin-top: 2%;
+	color: #4B0303; 
 }
 label > span, input, textarea, button {
   box-sizing: border-box;
+	 resize: none;
 }
 label {
   display: block;
-	font-weight: bold;
+  font-weight: bold;
 }
 label > span {
   display: none;
@@ -75,22 +98,22 @@ input, textarea, button {
   font: 300 100%/1.2 sans-serif;
 }
 input[type="text"], input[type="email"], textarea {
-  margin: 0 0 1em;
+  margin: 0 0 0.1em;
   border: 1px solid #ccc;
   outline: none;
+
 }
-input.invalid, textarea.invalid {
-  border-color: #d5144d;
-}
+
 textarea {
   height: 6em;
+	margin-left: auto;
 }
 input[type="submit"], button {
-  background: #a7cd80;
-  color: #333;
+  background: #4B0303;
+  color: beige;
 }
 input[type="submit"]:hover, button:hover {
-  background: #91b36f;
+  background: #4B0303;
 }
 @media screen and (min-width: 30em) {
   #contact-form h2 {
@@ -106,17 +129,38 @@ input[type="submit"]:hover, button:hover {
     border: 1px solid transparent;
     text-align: right;
   }
+	
+	
   input, textarea, button {
     width: 73.6263%;
     line-height: 1.5;
   }
   textarea {
-    height: 10em;
+    height: 5em;
   }
   input[type="submit"], button {
     margin-left: 26.3736%;
   }
+	.form-control {
+    display:inline-flex;
+    width: 73.6263%;
+    height: 34px;
+    padding: 0.5em;
+	margin: 0 0 0.1em;
+	margin-left: 26.3736%;
+	
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+   
 }
+}
+
+
 @media screen and (min-width: 48em) {
   #contact-form {
     text-align: justify;
@@ -140,4 +184,11 @@ input[type="submit"]:hover, button:hover {
   #contact-form aside {
     width: 30.9353%;
   }
+	
 }
+.opmerking {
+	 margin-left: 26.3736%;
+	font-weight: bold;
+	color: #4B0303;
+}
+

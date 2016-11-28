@@ -7,26 +7,104 @@
 	<meta name="keywords" content="Italiaans , Restaurant ,Grimbergen, Merchtem, Pizza">
 	<meta name="viewport" content="width=device-width, height=device-height" />
 	<title>Il Casale</title>
-	<link rel=stylesheet href=CSS/form.css>
+	<link rel="stylesheet" href="CSS/form.css">
+	<link rel="stylesheet" href="css/Design.css">
+	<link rel="stylesheet" href="css/Background.css">
+	<link rel="stylesheet" href="css/navbar.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>	
+	<script src="Javascript/navbar.js"></script>			
+
 	
 	
 
 	
+		
+	
+	
+	<style> body{background:url(Images/background4.JPG) no-repeat fixed; background-size: 100% 100%;</style>
 	
 	</head>
-	<style> body{background:url(Images/background4.JPG) no-repeat fixed;</style>
+	
 	<body>
+		
+		
+		
+		<header>
+		<nav class="nav-1"> <img class="afbeelding" style="margin-top:2.3%" src="Images/lOGO12.png" alt="logo il casale" />
+			<div class="nav-mobile">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+			<ul class="nav-list">
+				<li><a href="index.html">HOME</a></li>
+				<li><a class="current" href="#">ONS RESTAURANT</a></li>
+				<li><a href="#">MENU</a>
+					<ul class="submenu">
+						<li><a href="Menu2.html"> Kaart</a></li>
+						<li><a href="Drank.html">Wijnkaart</a></li>
+						<li><a href="away.html">Take-away</a></li>
+					</ul>
+				</li>
+				<li><a href="Foto.html">FOTO'S</a></li>
+				<li><a href="Openingsuren.html">OPENINGSUREN</a></li>
+				<li><a href="Locatie.Html">LOCATIE</a></li>
+				<li><a href="ilcasale.html">NL</a> </li>
+				<li><a href="FRilcasale.html">FR</a></li>
+				
+			</ul>
+		</nav>
+	</header>
 <section id="contact-form">
-  <h2>Contact</h2>
+ 
   <form id="contact" name="contact" accept-charset="utf-8" action="mailto:Tijs.debelie@student.odisee.be" method="post" enctype="text/plain">
-    <label><span>Naam</span><input name="naam" type="text" placeholder="Naam" required/></label>
-    <label><span>E-mail</span><input name="email" type="email" placeholder="E-mail" required/></label>
-    <label><span>Uw boodschap</span><textarea name="boodschap" placeholder="Boodschap" required></textarea></label>
+    <label><span>Naam en voornaam</span><input name="Naam en voornaam" type="text" placeholder="Naam en voornaam" required/></label>
+	 
+	  
+	   <label><span>E-mail</span><input name="email" type="email" placeholder="E-mail" required/></label>
+	  <label><span>Kies een datum en tijdstip</span><input id="datefield" type='date' min='1899-01-01'  required/></label>
+	  
+	  
+	  <label><select class="form-control" name="Tijdstip">
+		<option value="0">- kies een tijdstip -</option>
+		
+		<option value="12:00"> 12:00 </option>
+		<option value="12:30"> 12:30 </option>
+		<option value="13:00"> 13:00 </option>
+		<option value="13:30"> 13:30 </option>
+		
+		<option value="18:00"> 18:00 </option>
+		<option value="18:30"> 18:30 </option>
+		<option value="19:00"> 19:00 </option>
+		<option value="19:30"> 19:30 </option>
+		<option value="20:00"> 20:00 </option>
+		<option value="20:30"> 20:30 </option>
+		<option value="21:00"> 21:00 </option>
+		<option value="21:30"> 21:30 </option>
+	</select>
+</label>
+	  <p class="opmerking">Is uw reservatie voor vandaag ? Contacteer ons dan via telefoon (02/270.02.63).</p>
+	  
+	  <label><span>Aantal personen</span><input name="Aantal personen" type="number" placeholder="Aantal personen" required/></label>
+	  
+   
+	  <label><span>Opmerkingen</span><textarea name="Opmerkingen" placeholder="Opmerkingen (max 10 regels)" class="input" rows="10" cols="10" ></textarea></label>
+	<p class="opmerking"> Reservatie is pas definitief na ontvangst van bevestigingsmail !</p>
     <input type="submit"/>
   </form>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
   
 </section>
-		
+		<script src="Javascript/date.js"></script>
 		</body>
 	
 </html>

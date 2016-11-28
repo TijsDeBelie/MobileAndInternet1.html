@@ -7,14 +7,22 @@
 	<meta name="keywords" content="Italiaans , Restaurant ,Grimbergen, Merchtem, Pizza">
 	<meta name="viewport" content="width=device-width, height=device-height" />
 	<title>Il Casale</title>
-	
 	<link rel="stylesheet" href="css/Design.css">
 	<link rel="stylesheet" href="css/Background.css">
 	<link rel="stylesheet" href="css/navbar.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src="Javascript/navbar.js"></script>			
-
+	<script>
+		$(document).ready(function () {
+			$('nav ul li a:not(:only-child)').click(function (e) {
+				$(this).siblings('.submenu').slideToggle('slow');
+			});
+			$('.nav-mobile').click(function () {
+				$('.nav-1 ul:not(.submenu)').slideToggle();
+				$(".line").toggleClass("active");
+			});
+		});
+	</script>
 	<script type="text/javascript">
 		$(function () {
 			var currentIndex = 0
@@ -68,40 +76,6 @@
   			clearInterval(autoSlide);
   				cycleItems();
 });
-			
-			
-			$('.fast').click(function () {
-				clearInterval(autoSlide);
-				autoSlide = setInterval(function () {
-				currentIndex += 1;
-				if (currentIndex > itemAmt - 1) {
-					currentIndex = 0;
-				}
-				cycleItems();
-			}, 1500);
-				currentIndex += 1;
-				if (currentIndex > itemAmt - 1) {
-					currentIndex = 0;
-				}
-				cycleItems();
-			});
-			
-			$('.slow').click(function () {
-				clearInterval(autoSlide);
-				autoSlide = setInterval(function () {
-				currentIndex += 1;
-				if (currentIndex > itemAmt - 1) {
-					currentIndex = 0;
-				}
-				cycleItems();
-			}, 6000);
-				currentIndex += 1;
-				if (currentIndex > itemAmt - 1) {
-					currentIndex = 0;
-				}
-				cycleItems();
-			});
-			
 		});
 	</script>
 	<style>
@@ -167,6 +141,7 @@
 
 <body>
 	<header>
+		<a id="top"></a>
 		<nav class="nav-1">
 			<img class="afbeelding" style="margin-top:2.3%" src="Images/lOGO12.png" alt="logo il casale" />
 			<div class="nav-mobile">
@@ -175,18 +150,18 @@
 				<div class="line"></div>
 			</div>
 			<ul class="nav-list">
-				<li><a href="Index.html">HOME</a></li>
-				<li><a href="ilcasale.html">ONS RESTAURANT</a></li>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="FRilcasale.html">NOTRE RESTAURANT</a></li>
 				<li><a href="#">MENU</a>
 					<ul class="submenu">
-						<li><a href="Menu2.html"> Kaart</a></li>
-						<li><a href="Drank.html">Wijnkaart</a></li>
-						<li><a href="away.html">Take-away</a></li>
+						<li><a href="FRMenu.html"> Carte</a></li>
+						<li><a href="FRDrank.html">Vins</a></li>
+						<li><a href="FRaway.html">Take-away</a></li>
 					</ul>
 				</li>
-				<li><a class="current" href="Foto.html">FOTO'S</a></li>
-				<li><a href="Openingsuren.html">OPENINGSUREN</a></li>
-				<li><a href="Locatie.Html">LOCATIE</a></li>
+				<li><a class="current" href="FRFoto.html">PHOTOS</a></li>
+				<li><a href="FRopeningsuren.html">HEURES D'OUVERTURE</a></li>
+				<li><a href="FRlocatie.Html">LOCATION</a></li>
 				<li><a href="Foto.html">NL</a> </li>
 				<li><a href="FRfoto.html">FR</a></li>
 				
@@ -198,9 +173,6 @@
 			<button class="next">&#8680;</button>
 			<button class="prev">&#8678;</button>
 			<button class="stop"><i class="material-icons">pause_circle_outline</i></button>
-			<button class="fast">+ +</button>
-			<button class="slow">- -</button>
-			
 		</div>
 		<div class="container" style="min-width:320px;">
 			<div style="display: inline-block; min-width:320px;"> <img src="Images/Galerij/il_casale%20(2).JPG" alt="." /> </div>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="IL casale is een Italiaans restaurant in Grimbergen.">
+	<meta name="keywords" content="Italiaans , Restaurant ,Grimbergen, Merchtem, Pizza">
+	<meta name="viewport" content="width=device-width, height=device-height" />
+	<title>Il Casale</title>
+	<link rel="stylesheet" href="css/Design.css">
+	<link rel="stylesheet" href="css/Background.css">
+	<link rel="stylesheet" href="css/navbar.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('nav ul li a:not(:only-child)').click(function (e) {
+				$(this).siblings('.submenu').slideToggle('fast');
+			});
+			$('.nav-mobile').click(function () {
+				$('.nav-1 ul:not(.submenu)').slideToggle();
+				$(".line").toggleClass("active");
+			});
+		});
+
+		function downloadURL(url) {
+			var hiddenIFrameID = 'hiddenDownloader'
+				, iframe = document.getElementById(hiddenIFrameID);
+			if (iframe === null) {
+				iframe = document.createElement('iframe');
+				iframe.id = hiddenIFrameID;
+				iframe.style.display = 'none';
+				document.body.appendChild(iframe);
+			}
+			iframe.src = url;
+		};
+		function checkpage(){
+if (document.documentElement.clientWidth >= 1200) {
+		
+		document.location = "FRaway.html";
+		
+		}
+			
+		$(window).bind('resize', function(e)
+{
+  if (window.RT) clearTimeout(window.RT);
+  window.RT = setTimeout(function()
+  {
+    this.location.reload(false);
+  }, 100);
+});
+	}
+	
+		
+	
+</script>
+	
+	<style>
+		body {
+			background: url(Images/oven.jpg) no-repeat fixed;
+			background-size: 100% 100%;
+		}
+	</style>
+</head>
+
+<body onload="checkpage()">
+	<header>
+   <nav class="nav-1">
+		<img class="afbeelding" style="margin-top:2.3%" src="Images/lOGO12.png" alt="logo il casale" />
+
+   
+    <div class="nav-mobile">
+        <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+    </div>
+        <ul class="nav-list">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="FRilcasale.html">NOTRE RESTAURANT</a></li>
+				<li><a class="current" href="#">MENU</a>
+					<ul class="submenu">
+						<li><a href="FRMenu2.html"> Carte</a></li>
+						<li><a href="FRDrank.html">Vins</a></li>
+						<li><a class="current" href="FRaway.html">Take-away</a></li>
+					</ul>
+				</li>
+				<li><a href="FRFoto.html">PHOTOS</a></li>
+				<li><a href="FRopeningsuren.html">HEURES D'OUVERTURE</a></li>
+				<li><a href="FRLocatie.Html">LOCATION</a></li>
+				<li><a href="Drank.html">NL</a> </li>
+				<li><a href="FRdrank.html">FR</a></li>
+    </ul>
+</nav>
+	</header>
+	<article>
+			<table id="pricelist">
+				<thead>
+					<tr class="red">
+						<center><td> Télécharger le menu</td>  </center> </tr>
+					<tr class="red"> 
+						<td>
+							<a href="Downloads/Take-away.pdf" download> <img class="download" src="Images/download3.jpg" alt="Downloadlogo" > </a>
+						</td> </tr> </thead> </table>
+						
+	</article>
+	<footer>
+		<div style="position:fixed;bottom:0;height:auto;margin-top:40px;width:100%;text-align:right"><strong> &copy;ITDB</strong></div>
+	</footer>
+</body>
+
+</html>
