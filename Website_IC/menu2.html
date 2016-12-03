@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="IL casale is een Italiaans restaurant in Grimbergen.">
+	<meta name="keywords" content="Italiaans , Restaurant ,Grimbergen, Merchtem, Pizza">
+	<meta name="viewport" content="width=device-width, height=device-height" />
+	<title> Menu Il Casale</title>
+	<link rel="stylesheet" href="css/Design.css">
+	<link rel="stylesheet" href="css/Background.css">
+	<link rel="stylesheet" href="css/navbar.css">
+	<style>
+		body {
+			background: url(Images/achtergrondmenu.jpg)no-repeat center center fixed;
+	-webkit-background-size: cover;
+  			-moz-background-size: cover;
+			-o-background-size: cover;
+  			background-size: cover;
+	}
+		
+		div.container {
+			width: 100%;
+			margin: 0px;
+		}
+		
+		div.header {
+			height: 120px;
+			text-align: center;
+			color: beige;
+			background-color: #2B0000;
+			clear: left;
+			position: relative;
+		}
+		
+		div.footer {
+			background-color: gray;
+			clear: left;
+		}
+		
+		.header h1 {
+			padding: 0;
+			margin: 2%;
+		}
+		
+		div.left {
+			text-align: center;
+			font-family: 'Euphoria Script';
+			font-size: 35px;
+			font-weight: bold;
+			line-height: 50px;
+			color: #4B0303;
+		}
+		
+		img {
+			margin: 0 0 10px 10px;
+			max-width: 100%;
+		}
+		
+		h2 {
+			margin-top: 2%;
+			padding-top: 2%;
+			margin-bottom: 0;
+			font-weight: bold;
+			text-align: center;
+		}
+		
+		a {
+			text-decoration: none;
+			color: white;
+		}
+	</style>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('nav ul li a:not(:only-child)').click(function (e) {
+				$(this).siblings('.submenu').slideToggle('slow');
+			});
+			$('.nav-mobile').click(function () {
+				$('.nav-1 ul:not(.submenu)').slideToggle();
+				$(".line").toggleClass("active");
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<header>
+		<a id="top"></a>
+		<nav class="nav-1"> <img class="afbeelding" style="margin-top:2.3%" src="Images/lOGO12.png" alt="logo il casale" />
+			<div class="nav-mobile">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+			<ul class="nav-list">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="ilcasale.html">ONS RESTAURANT</a></li>
+				<li><a class="current" href="#">MENU</a>
+					<ul class="submenu">
+						<li><a class="current" href="menu2.html"> Kaart</a></li>
+						<li><a href="drank.html">Wijnkaart</a></li>
+						<li><a href="away.html">Take-away</a></li>
+					</ul>
+				</li>
+				<li><a href="foto.html">FOTO'S</a></li>
+				<li><a href="#">OPENINGSUREN</a><ul class="submenu">
+						<li><a href="openingsuren.html"> Restaurant </a></li>
+						<li><a href="OpenTA.html">Take-away</a></li>
+						
+					</ul></li>
+				<li><a href="locatie.html">LOCATIE</a></li>
+				<li><a href="menu2.html">NL</a> </li>
+				<li><a href="FRmenu.html">FR</a></li>
+				
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<div class="container">
+			<div class="header">
+				<h1 class="header">ENTRATE</h1></div>
+			<div class="left">
+				<h2> Fredde </h2>
+				<ul>
+					<li>Bruschetta</li>
+					<li>Mozzarella di buffala alla caprese</li>
+					<li>Rundscarpaccio</li>
+					<li>Zalmcarpaccio</li>
+					<li>Prosciutto di parma (24 mesi) &#38; melone</li>
+					<li>Antipasto misto</li>
+					<li>Antipasto casale "royale" (2 personen)</li>
+				</ul>
+			</div>
+			<div class="left">
+				<h2>Calde</h2>
+				<ul class="gerecht2">
+					<li>Scampi casale</li>
+					<li>Scampi diavola</li>
+					<li>Scampi al aglio</li>
+					<li>Scampi fritti</li>
+					<li>Calamari fritti</li>
+					<li>Parmezaankroket</li>
+					<li>Grijze garnaalkroketten</li>
+				</ul>
+			</div>
+		</div>
+		<div class="container">
+			<div class="header">
+				<h1>PASTA</h1>
+				<a href="#top">
+					<div class="wrap" style="border: 2px solid #4B0303; background: #4B0303">
+						<div class="arrow"> <span class="left-wing" style="background-color: white;"></span> <span class="right-wing" style="background-color: white;"></span> </div>
+					</div>
+				</a>
+			</div>
+			<div class="left">
+				<ul class="gerecht">
+					<li>Spaghetti al ragù</li>
+					<li>Spaghetti carbonara</li>
+					<li>Penne all'amatriciana</li>
+					<li>Penne alla norma</li>
+					<li>Penne 4 formaggi</li>
+					<li>Linguini con vongole</li>
+					<li>Linguini frutti di mare</li>
+					<li>Tagliatelli al salmone</li>
+					<li>Tagliatelli con gambas</li>
+					<li>Tagliatelli primavera</li>
+					<li>Tagliatelli boscaiola</li>
+					<li>Al pesto di casa</li>
+					<li>Lasagna</li>
+					<li>Tortellini primavera</li>
+					<li>Tortellini gorgonzola</li>
+					<li>Tortellini gegratineerd</li>
+					<li>Trio di pasta</li>
+					<li>Trio di pasta (2 personen)</li>
+				</ul>
+			</div>
+		</div>
+		<div class="container">
+			<div class="header">
+				<h1>SCALOPPINE DI VITELLO</h1>
+				<a href="#top">
+					<div class="wrap" style="border: 2px solid #4B0303; background: #4B0303">
+						<div class="arrow"> <span class="left-wing" style="background-color: white;"></span> <span class="right-wing" style="background-color: white;"></span> </div>
+					</div>
+				</a>
+			</div>
+			<div class="left">
+				<ul class="gerecht">
+					<li>Milanese</li>
+					<li>Alla parmigiana</li>
+					<li>Al parmigiano</li>
+					<li>Saltimbocca alla romana</li>
+					<li>Fiorentina</li>
+					<li>Cordon bleu</li>
+					<li>Ossobuco</li>
+				</ul>
+				<div class="saus4">
+					<ul style="list-style: none; text-decoration: underline; text-align: center; font-family: 'Euphoria Script'; font-size: 35px; font-weight: bold; line-height: 50px; color: #4B0303;">
+						<li> Verkrijgbaar met pasta of frietjes </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="header">
+				<h1>CARNE</h1>
+				<a href="#top">
+					<div class="wrap" style="border: 2px solid #4B0303; background: #4B0303">
+						<div class="arrow"> <span class="left-wing" style="background-color: white;"></span> <span class="right-wing" style="background-color: white;"></span> </div>
+					</div>
+				</a>
+			</div>
+			<div class="left">
+				<ul class="gerecht">
+					<li>Steak</li>
+					<li>Rundstussenrib</li>
+				</ul>
+				<div class="saus">
+					<ul style="list-style: none;">
+						<li class="saus0"> Sauzen naar keuze </li>
+					</ul>
+				</div>
+				<div class="saus2">
+					<ul>
+						<li> Pizzaiola </li>
+						<li> Gorgonzola </li>
+						<li> Archiduc </li>
+						<li> Bearnaise </li>
+						<li> Groene peper </li>
+					</ul>
+				</div>
+				<div class="saus3">
+					<ul style="list-style: none; text-decoration: underline; text-align: center; font-family: 'Euphoria Script'; font-size: 35px; font-weight: bold; line-height: 50px; color: #4B0303;">
+						<li> Verkrijgbaar met pasta of frietjes </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="header">
+				<h1>PESCE </h1>
+				<a href="#top">
+					<div class="wrap" style="border: 2px solid #4B0303; background: #4B0303">
+						<div class="arrow"> <span class="left-wing" style="background-color: white;"></span> <span class="right-wing" style="background-color: white;"></span> </div>
+					</div>
+				</a>
+			</div>
+			<div class="left">
+				<ul class="gerecht">
+					<li>Duo di pesce alla griglia (calamari-gambas)</li>
+					<li>Zalm met zijn puree van basilicum &#38; olijfolie</li>
+					<li>Sole "meuni&egrave;re" of "ostendaise"</li>
+				</ul>
+				<div class="saus4">
+					<ul style="list-style: none; text-decoration: underline;">
+						<li> Verkrijgbaar met pasta of frietjes </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="header">
+				<h1>I CONTORNI </h1>
+				<a href="#top">
+					<div class="wrap" style="border: 2px solid #4B0303; background: #4B0303">
+						<div class="arrow"> <span class="left-wing" style="background-color: white;"></span> <span class="right-wing" style="background-color: white;"></span> </div>
+					</div>
+				</a>
+			</div>
+			<div class="left">
+				<ul class="gerecht">
+					<li>Groentenkrans</li>
+					<li>Gemengde sla</li>
+					<li>Frietjes</li>
+					<li>Pasta</li>
+				</ul>
+			</div>
+		</div>
+		<a id="Pizza"></a>
+		<div class="container">
+			<div class="header">
+				<h1>PIZZA </h1>
+				<a href="#top">
+					<div class="wrap" style="border: 2px solid #4B0303; background: #4B0303">
+						<div class="arrow"> <span class="left-wing" style="background-color: white;"></span> <span class="right-wing" style="background-color: white;"></span> </div>
+					</div>
+				</a>
+			</div>
+			<div class="left">
+				<ul class="gerecht">
+					<li> Margherita <em>(tomaten, mozzarella)</em> </li>
+					<li> Regina <em>(tomaten, mozzarella, hesp, champignons, olijven)</em> </li>
+					<li> Napoletana <em>(tomaten, mozzarella, ansjovis, olijven)</em> </li>
+					<li> Quattro stagioni <em>(tomaten, mozzarella, hesp, champignons, artisjok, ansjovis, olijven)</em> </li>
+					<li> Capricciosa <em>(tomaten, mozzarella, hesp, champignons, artisjok, olijven, ei)</em> </li>
+					<li> Calzone <em>(tomaten, mozzarella, hesp, ei) (toegeplooide pizza)</em> </li>
+					<li> Padrone <em>(tomaten, mozzarella, pikante salami, olijven, ei)</em> </li>
+					<li> Paesana <em>(tomaten, mozzarella, pikante salami, olijven, uien)</em> </li>
+					<li> Gorgonzola <em>(tomaten, mozzarella, gorgonzola)</em> </li>
+					<li> Al tonno <em>(tomaten, mozzarella, tonijn, olijven)</em> </li>
+					<li> Siciliane <em>(tomaten, mozzarella, pepers, ei, olijven)</em> </li>
+					<li> Maison <em>(tomaten, mozzarella, hesp, champignons, artisjok, pepers, ei, salami)</em> </li>
+					<li> Marinara <em>(tomaten, mozzarella, zeevruchten)</em> </li>
+					<li> Ananas <em>(tomaten, mozzarella, ananas)</em> </li>
+					<li> Hawaï <em>(tomaten, mozzarella, ananas, hesp)</em> </li>
+					<li> Salmone <em>(tomaten, mozzarella, gerookte zalm)</em> </li>
+					<li> Vegetariana <em>(tomaten, mozzarella, seizoensgroenten)</em> </li>
+					<li> Aubergine <em>(tomaten, mozzarella, gegrilde aubergines)</em> </li>
+					<li> Margherita reale <em>(kerstomaten, mozzarella,  basilicum, olijfolie)</em> </li>
+					<li> Al pollo <em>(tomaten, mozzarella, kruidige kip, champignons, uien)</em> </li>
+					<li> Parma <em>(tomaten, mozzarella, parmahesp, raketsla, parmezaanschilfers)</em> </li>
+					<li> Scampi <em>(tomaten, mozzarella, scampis, look)</em> </li>
+				</ul>
+			</div>
+		</div>
+		<div class="container">
+			<div class="header">
+				<h1>BAMBINI </h1>
+				<a href="#top">
+					<div class="wrap" style="border: 2px solid #4B0303; background: #4B0303">
+						<div class="arrow"> <span class="left-wing" style="background-color: white;"></span> <span class="right-wing" style="background-color: white;"></span> </div>
+					</div>
+				</a>
+			</div>
+			<div class="left">
+				<ul class="gerecht">
+					<li>Spaghetti bolognese</li>
+					<li>Kip met appelmoes en frietjes</li>
+				</ul>
+			</div>
+		</div>
+		<div class="container">
+			<div class="header">
+				<h1>DESSERT </h1>
+				<a href="#top">
+					<div class="wrap" style="border: 2px solid #4B0303; background: #4B0303">
+						<div class="arrow"> <span class="left-wing" style="background-color: white;"></span> <span class="right-wing" style="background-color: white;"></span> </div>
+					</div>
+				</a>
+			</div>
+			<div class="left">
+				<h2>Gelati</h2>
+				<ul>
+					<li>Coupe dame blanche</li>
+					<li>Coupe br&eacute;silienne</li>
+					<li>Coupe sorbet mixte</li>
+					<li>Coupe junior</li>
+					<li>Coupe chocolade/hazelnoten</li>
+					<li>Coupe amarena kersen</li>
+					<li>Flute limoncello</li>
+					<li>Cassata siciliana</li>
+					<li>Milanese snede</li>
+					<li>Tartufo naar keuze</li>
+					<li>Italiaanse meringue</li>
+				</ul>
+				<h2>Dolci</h2>
+				<ul class="gerecht2">
+					<li>Huisbereide tiramisu</li>
+					<li>Panna cotta</li>
+					<li>Chocolademousse</li>
+					<li>Cr&egrave;me br&ucirc;l&eacute;e</li>
+					<li>Moelleux</li>
+					<li>Sabayon</li>
+					<li>Sabayon ijs</li>
+					<li>Tarte tatin</li>
+					<li>Tarte tatin geflambeerd met Calvados</li>
+					<li>Mix van Italiaanse kazen</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<script>
+			//google analytics
+			(function (i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function () {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o)
+					, m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-86533222-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+		<div style="position:fixed;bottom:0;height:auto;margin-top:40px;width:100%;text-align:right"><strong> &copy;ITDB</strong></div>
+	</footer>
+</body>
+
+</html>

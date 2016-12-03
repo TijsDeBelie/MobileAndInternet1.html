@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Euphoria+Script');
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	
+	color: #545454;
+	font-family: "Roboto";
+	font-size: 18px;
+	line-height: 1.5;
+	margin: 0;
+	margin-bottom: 0;
+	padding: 0px;
+	padding-bottom: 0px;
+	overflow: auto;
+	height: 100%;
+	background-size: 100% 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body:before {
+	content: "";
+	z-index: -1;
+	display: block;
+	position: fixed;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(253, 221, 161, 0.5);
+}
+

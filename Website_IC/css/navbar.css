@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Euphoria+Script');
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.nav-1 {
+	display: block;
+	position: relative;
+	height: 100px;
+	background: #4B0303;
+	color: #fefefe;
+	z-index: 4000;
+	border-color: beige;
+	border-bottom-style: double;
+	border-width: thick;
+}
+
+.nav-1 .logo {
+	position: relative;
+	float: left;
+	color: #fefefe;
+	line-height: 140px;
+	width: 300px;
+	padding: 0px;
+	z-index: 9999;
+}
+
+.logo img {
+	position: relative;
+	width: 90px;
+	z-index: 9999;
+}
+
+.nav-1 ul {
+	float: right;
+	z-index: 1;
+}
+
+.nav-1 ul li {
+	display: inline-block;
+	line-height: 95px;
+	background: #4B0303;
+	z-index: 1;
+}
+
+.nav-1 ul li a {
+	color: beige;
+	display: block;
+	padding: 0 15px;
+	z-index: 1
+}
+
+.nav-1 ul li a:hover {
+	background: #9A3434;
+}
+
+.submenu {
+	position: absolute;
+	display: none;
+}
+
+ul.submenu li {
+	
+	display:block;
+	line-height: 60px;
+}
+
+ul.submenu li a {
+	
+}
+
+.nav-1 ul li:active .submenu {
+	display: block;
+}
+
+nav ul li a:not(:only-child):after {
+	padding-left: 4px;
+	content: ' ▾';
+	overflow: hidden;
+	z-index: 2;
+}
+
+.nav-1 .nav-mobile {
+	float: right;
+	color: #fefefe;
+	line-height: 140px;
+	width: 50px;
+	height: 50px;
+	padding: 5px;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+	top: 50%;
+	margin-top: -25px;
+	display: none;
+}
+
+.line {
+	width: 90%;
+	background: #fff;
+	height: 8px;
+	margin: 4px auto;
+	border-radius: 2px;
+	transition: all linear .3s;
+}
+
+.line:first-child.active {
+	-webkit-transform: translate(0px, 12px) rotate(45deg);
+	transform: translate(0px, 12px) rotate(45deg);
+}
+
+.line:nth-child(2).active {
+	opacity: 0;
+}
+
+.line:last-child.active {
+	-webkit-transform: translate(0px, -12px) rotate(-45deg);
+	transform: translate(0px, -12px) rotate(-45deg);
+}
+
+@media screen and (max-width: 1100px) {
+	
+	.nav-1 ul li {
+		display: block;
+		
+	}
+	
+	.nav-1 ul {
+		float: none;
+		display: none;
+	}
+	.nav-list {
+		position: absolute;
+		left: 0;
+		top: 100px;
+		width: 100%;
+		text-align: center;
+		
+	}
+	.submenu {
+		position: relative;
+		left: 0;
+		right: 0;
+	}
+	.nav-1 ul li:active .submenu {
+		display: none;
+	}
+	.nav-1 .logo {
+		width: 50%;
+		text-align: center;
+	}
+	.nav-1 .nav-mobile {
+		display: block;
+	}
+	nav .locatie{Width:100%;
+		}
+}
+@media screen and (max-width: 300px) {
+	.nav-1 img {
+		display: none;
+		
+	}
+
+}
+

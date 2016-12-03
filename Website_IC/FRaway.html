@@ -47,9 +47,12 @@ if (document.documentElement.clientWidth < 1100) {
 	
 	<style>
 		body {
-			background: url(Images/oven.jpg) no-repeat fixed;
-			background-size: 100% 100%;
-		}
+			background: url(Images/oven.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+  			-moz-background-size: cover;
+			-o-background-size: cover;
+  			background-size: cover;
+	}
 	</style>
 </head>
 
@@ -67,14 +70,18 @@ if (document.documentElement.clientWidth < 1100) {
 				<li><a href="FRilcasale.html">NOTRE RESTAURANT</a></li>
 				<li><a class="current" href="#">MENU</a>
 					<ul class="submenu">
-						<li><a href="FRMenu.html"> Carte</a></li>
-						<li><a href="FRDrank.html">Vins</a></li>
+						<li><a href="FRmenu.html"> Carte</a></li>
+						<li><a href="FRdrank.html">Vins</a></li>
 						<li><a class="current" href="FRaway.html">Take-away</a></li>
 					</ul>
 				</li>
-				<li><a href="FRFoto.html">PHOTOS</a></li>
-				<li><a href="FROpeningsuren.html">HEURES D'OUVERTURE</a></li>
-				<li><a href="FRLocatie.Html">LOCATION</a></li>
+				<li><a href="FRfoto.html">PHOTOS</a></li>
+				<li><a href="#">HEURES D'OUVERTURES</a><ul class="submenu">
+						<li><a href="FRopeningsuren.html"> Restaurant </a></li>
+						<li><a href="FRopenTA.html">Take-away</a></li>
+						
+					</ul></li>
+				<li><a href="FRlocatie.html">LOCATION</a></li>
 				<li><a href="away.html">NL</a> </li>
 				<li><a href="FRaway.html">FR</a></li>
 				

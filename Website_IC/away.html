@@ -47,9 +47,12 @@ if (document.documentElement.clientWidth < 1099) {
 	
 	<style>
 		body {
-			background: url(Images/oven.jpg) no-repeat fixed;
-			background-size: 100% 100%;
-		}
+			background: url(Images/oven.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+  			-moz-background-size: cover;
+			-o-background-size: cover;
+  			background-size: cover;
+	}
 	</style>
 </head>
 
@@ -62,20 +65,26 @@ if (document.documentElement.clientWidth < 1099) {
 				<div class="line"></div>
 			</div>
 			<ul class="nav-list">
-				<li><a href="Index.html">HOME</a></li>
+				<li><a href="index.html">HOME</a></li>
 				<li><a href="ilcasale.html">ONS RESTAURANT</a></li>
 				<li><a class="current" href="#">MENU</a>
 					<ul class="submenu">
-						<li><a href="Menu2.html"> Kaart</a></li>
-						<li><a href="Drank.html">Wijnkaart</a></li>
+						<li><a href="menu2.html"> Kaart</a></li>
+						<li><a href="drank.html">Wijnkaart</a></li>
 						<li><a class="current" href="away.html">Take-away</a></li>
 					</ul>
 				</li>
-				<li><a href="Foto.html">FOTO'S</a></li>
-				<li><a href="Openingsuren.html">OPENINGSUREN</a></li>
-				<li><a href="Locatie.Html">LOCATIE</a></li>
-				<li><a href="away.html">NL</a> </li>
-				<li><a href="FRaway.html">FR</a></li>
+				<li><a href="foto.html">FOTO'S</a></li>
+				<li><a href="#">OPENINGSUREN</a>
+					<ul class="submenu">
+						<li><a href="openingsuren.html"> Restaurant </a></li>
+						<li><a href="OpenTA.html">Take-away</a></li>
+						
+					</ul></li>
+				<li><a href="locatie.html">LOCATIE</a></li>
+				<li><a href="ilcasale.html">NL</a> </li>
+				<li><a href="FRilcasale.html">FR</a></li>
+				
 			</ul>
 		</nav>
 	</header>
@@ -85,6 +94,7 @@ if (document.documentElement.clientWidth < 1099) {
 				<thead>
 					<tr class="red">
 						<td>Pizza</td>
+						
 						<td>
 							<a href="Downloads/Take-away-menu.pdf" download> <img class="download" src="Images/download3.jpg" alt="Downloadlogo"> </a>
 						</td>
