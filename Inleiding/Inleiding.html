@@ -1,37 +1,442 @@
 <!DOCTYPE html>
 <html lang="nl">
-	<head>
-		<meta charset="utf-8" >
-		<meta name="description" content="beschrijving van de webpagina" >
-		<meta name="keywords" content="trefwoorden, gescheiden, door, komma's">
-        <meta name="viewport" content="width=device-width, height=device-height" />
-		<title>Uitnodiging</title>
-		<link rel="stylesheet" type="text/css" href="Design.css">
 
-	</head>
-	
-	
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="beschrijving van de webpagina">
+	<meta name="keywords" content="trefwoorden, gescheiden, door, komma's">
+	<meta name="viewport" content="width=device-width, height=device-height" />
+	<title>Uitnodiging</title>
+	<link rel="stylesheet" type="text/css" href="Design.css">
+	<style>
+		@keyframes snowflake {
+			0% {
+				top: 10vh;
+				opacity: 1;
+			}
+			100% {
+				top: 100vh;
+				opacity: 0;
+			}
+		}
+		
+		@keyframes snowflake2 {
+			0% {
+				top: 0vh;
+				left: 10vw;
+				opacity: 1;
+			}
+			100% {
+				top: 100vh;
+				left: 10vw;
+				opacity: 0;
+			}
+		}
+		
+		@keyframes snowflake3 {
+			0% {
+				top: 10vh;
+				left: 20vw;
+				opacity: 1;
+			}
+			100% {
+				top: 100vh;
+				left: 20vw;
+				opacity: 0;
+			}
+		}
+		
+		@keyframes snowflake4 {
+			0% {
+				top: 0vh;
+				left: 30vw;
+				opacity: 1;
+			}
+			100% {
+				top: 100vh;
+				left: 30vw;
+				opacity: 0;
+			}
+		}
+		
+		@keyframes snowflake5 {
+			0% {
+				top: 10vh;
+				left: 40vw;
+				opacity: 1;
+			}
+			100% {
+				top: 100vh;
+				left: 40vw;
+				opacity: 0;
+			}
+		}
+		
+		@keyframes snowflake6 {
+			0% {
+				top: 0vh;
+				left: 50vw;
+				opacity: 1;
+			}
+			100% {
+				top: 100vh;
+				left: 50vw;
+				opacity: 0;
+			}
+		}
+		@keyframes snowflake7 {
+			0% {
+				top: 10vh;
+				left: 60vw;
+				opacity: 1;
+			}
+			100% {
+				top: 100vh;
+				left: 60vw;
+				opacity: 0;
+			}
+		}
+		
+		@keyframes snowflake8 {
+			0% {
+				top: 0vh;
+				left: 70vw;
+				opacity: 1;
+			}
+			100% {
+				top: 100vh;
+				left: 70vw;
+				opacity: 0;
+			}
+		}
+		
+		@keyframes snowflake9 {
+			0% {
+				top: 10vh;
+				left: 80vw;
+				opacity: 1;
+			}
+			100% {
+				top: 100vh;
+				left: 80vw;
+				opacity: 0;
+			}
+		}
+		
+		@keyframes snowflake10 {
+			0% {
+				top: 0vh;
+				left: 90vw;
+				opacity: 1;
+			}
+			100% {
+				top: 100vh;
+				left: 90vw;
+				opacity: 0;
+			}
+		}
+		
+		@keyframes snowflake11 {
+			0% {
+				top: 10vh;
+				left: 100vw;
+				opacity: 1;
+			}
+			100% {
+				top: 100vh;
+				left: 100vw;
+				opacity: 0;
+			}
+		}
+		
+		@keyframes snowflake12 {
+			0% {
+				top: 0vh;
+				left: 110vw;
+				opacity: 1;
+			}
+			100% {
+				top: 100vh;
+				left: 110vw;
+				opacity: 0;
+			}
+		}
+		
+		@keyframes snowflake13 {
+			0% {
+				top: 0vh;
+				left: 70vw;
+				opacity: 1;
+			}
+			100% {
+				top: 100vh;
+				left: 70vw;
+				opacity: 0;
+			}
+		}
+		
+		@keyframes snowflake14 {
+			0% {
+				top: 10vh;
+				left: 80vw;
+				opacity: 1;
+			}
+			100% {
+				top: 100vh;
+				left: 80vw;
+				opacity: 0;
+			}
+		}
+		
+		@keyframes snowflake15 {
+			0% {
+				top: 0vh;
+				left: 90vw;
+				opacity: 1;
+			}
+			100% {
+				top: 100vh;
+				left: 90vw;
+				opacity: 0;
+			}
+		}
+		
+		@keyframes snowflake16 {
+			0% {
+				top: 10vh;
+				left: 100vw;
+				opacity: 1;
+			}
+			100% {
+				top: 100vh;
+				left: 100vw;
+				opacity: 0;
+			}
+		}
+		
+		@keyframes snowflake17 {
+			0% {
+				top: 0vh;
+				left: 110vw;
+				opacity: 1;
+			}
+			100% {
+				top: 100vh;
+				left: 110vw;
+				opacity: 0;
+			}
+		}
+		
+		.snowflake {
+			background-image: url(Images/snowflake.png);
+			background-size: 50px 50px;
+			animation-name: snowflake;
+			animation-duration: 7s;
+			background-repeat: no-repeat;
+			height: 50px;
+			width: 100vw;
+			opacity: 0.2;
+			animation-iteration-count: infinite;
+			transition-property: top, bottom;
+			position: absolute;
+			z-index: -1;
+		}
+		
+		.snowflake2 {
+			background-image: url(Images/snowflake.png);
+			background-size: 50px 50px;
+			animation-name: snowflake2;
+			animation-duration: 3.2s;
+			background-repeat: no-repeat;
+			height: 50px;
+			width: 100vw;
+			opacity: 0.2;
+			animation-iteration-count: infinite;
+			transition-property: top, bottom;
+			position: absolute;
+			z-index: -1;
+		}
+		
+		.snowflake3 {
+			background-image: url(Images/snowflake.png);
+			background-size: 50px 50px;
+			animation-name: snowflake3;
+			animation-duration: 6s;
+			background-repeat: no-repeat;
+			height: 50px;
+			width: 100vw;
+			opacity: 0.2;
+			animation-iteration-count: infinite;
+			transition-property: left, top, bottom;
+			position: absolute;
+			z-index: -1;
+		}
+		
+		.snowflake4 {
+			background-image: url(Images/snowflake.png);
+			background-size: 50px 50px;
+			animation-name: snowflake4;
+			animation-duration: 5s;
+			background-repeat: no-repeat;
+			height: 50px;
+			width: 100vw;
+			opacity: 0.2;
+			animation-iteration-count: infinite;
+			transition-property: left, top, bottom;
+			position: absolute;
+			z-index: -1;
+		}
+		
+		.snowflake5 {
+			background-image: url(Images/snowflake.png);
+			background-size: 50px 50px;
+			animation-name: snowflake5;
+			animation-duration: 8s;
+			background-repeat: no-repeat;
+			height: 50px;
+			width: 100vw;
+			opacity: 0.2;
+			animation-iteration-count: infinite;
+			transition-property: top, bottom;
+			position: absolute;
+			z-index: -1;
+		}
+		
+		.snowflake6 {
+			background-image: url(Images/snowflake.png);
+			background-size: 50px 50px;
+			animation-name: snowflake6;
+			animation-duration: 4s;
+			background-repeat: no-repeat;
+			height: 50px;
+			width: 100vw;
+			opacity: 0.2;
+			animation-iteration-count: infinite;
+			transition-property: top, bottom;
+			position: absolute;
+			z-index: -1;
+		}
+		.snowflake7 {
+			background-image: url(Images/snowflake.png);
+			background-size: 50px 50px;
+			animation-name: snowflake7;
+			animation-duration: 7s;
+			background-repeat: no-repeat;
+			height: 50px;
+			width: 100vw;
+			opacity: 0.2;
+			animation-iteration-count: infinite;
+			transition-property: top, bottom;
+			position: absolute;
+			z-index: -1;
+		}
+		
+		.snowflake8 {
+			background-image: url(Images/snowflake.png);
+			background-size: 50px 50px;
+			animation-name: snowflake8;
+			animation-duration: 3.2s;
+			background-repeat: no-repeat;
+			height: 50px;
+			width: 100vw;
+			opacity: 0.2;
+			animation-iteration-count: infinite;
+			transition-property: top, bottom;
+			position: absolute;
+			z-index: -1;
+		}
+		
+		.snowflake9 {
+			background-image: url(Images/snowflake.png);
+			background-size: 50px 50px;
+			animation-name: snowflake9;
+			animation-duration: 6s;
+			background-repeat: no-repeat;
+			height: 50px;
+			width: 100vw;
+			opacity: 0.2;
+			animation-iteration-count: infinite;
+			transition-property: left, top, bottom;
+			position: absolute;
+			z-index: -1;
+		}
+		
+		.snowflake10 {
+			background-image: url(Images/snowflake.png);
+			background-size: 50px 50px;
+			animation-name: snowflake10;
+			animation-duration: 5s;
+			background-repeat: no-repeat;
+			height: 50px;
+			width: 100vw;
+			opacity: 0.2;
+			animation-iteration-count: infinite;
+			transition-property: left, top, bottom;
+			position: absolute;
+			z-index: -1;
+		}
+		
+		.snowflake11 {
+			background-image: url(Images/snowflake.png);
+			background-size: 50px 50px;
+			animation-name: snowflake11;
+			animation-duration: 8s;
+			background-repeat: no-repeat;
+			height: 50px;
+			width: 100vw;
+			opacity: 0.2;
+			animation-iteration-count: infinite;
+			transition-property: top, bottom;
+			position: absolute;
+			z-index: -1;
+		}
+		
+		.snowflake12 {
+			background-image: url(Images/snowflake.png);
+			background-size: 50px 50px;
+			animation-name: snowflake12;
+			animation-duration: 4s;
+			background-repeat: no-repeat;
+			height: 50px;
+			width: 100vw;
+			opacity: 0.2;
+			animation-iteration-count: infinite;
+			transition-property: top, bottom;
+			position: absolute;
+			z-index: -1;
+		}
+		
+		body {
+			background-image: url(Images/Achtergrond.jpg);
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+	</style>
+</head>
 
-	<body>
-<section> 
-	
-	<h1> Merry Christmas </h1>
-	
-	<p> We willen jullie graag uitnodigen op ons jaarlijks kerstfeestje. Gelieve je even op aanwezig te zetten als je kunt komen. </p>
-	
-	
-	
-	
-	<div> 
- <a href="Inschrijving.html">Schrijf je hier in!</a>
- 
-</div>
-	
-	
-		
-		</section>
-		
-		
-   
-	</body>
+<body>
+	<section>
+		<div class="snowflake"></div>
+		<div class="snowflake2"></div>
+		<div class="snowflake3"></div>
+		<div class="snowflake4"></div>
+		<div class="snowflake5"></div>
+		<div class="snowflake6"></div>
+		<div class="snowflake7"></div>
+		<div class="snowflake8"></div>
+		<div class="snowflake9"></div>
+		<div class="snowflake10"></div>
+		<div class="snowflake11"></div>
+		<div class="snowflake12"></div>
+		<nav>
+			<h1 class="green"> Merry Christmas </h1> </nav>
+		<div class="red">
+			<p> We willen jullie graag uitnodigen op ons jaarlijks kerstfeestje. Gelieve je even op aanwezig te zetten als je kunt komen. </p>
+		</div>
+		<div> <a href="Inschrijving.html">Schrijf je hier in!</a> </div>
+	</section>
+</body>
+
 </html>
