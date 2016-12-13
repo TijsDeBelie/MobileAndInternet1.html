@@ -1,0 +1,173 @@
+@keyframes snowflake {
+			0% {
+				top: 10vh;
+				opacity: 1;
+			}
+			100% {
+				top: 100vh;
+				opacity: 0;
+			}
+		}
+		
+		@keyframes snowflake2 {
+			0% {
+				top: 0vh;
+				left: 10%;
+				opacity: 1;
+			}
+			100% {
+				top: 100vh;
+				left: 10%;
+				opacity: 0;
+			}
+		}
+		
+		@keyframes snowflake3 {
+			0% {
+				top: 10vh;
+				left: 20%;
+				opacity: 1;
+			}
+			100% {
+				top: 100vh;
+				left: 20%;
+				opacity: 0;
+			}
+		}
+		
+		@keyframes snowflake4 {
+			0% {
+				top: 0vh;
+				left: 30%;
+				opacity: 1;
+			}
+			100% {
+				top: 100vh;
+				left: 30%;
+				opacity: 0;
+			}
+		}
+		
+		@keyframes snowflake5 {
+			0% {
+				top: 10vh;
+				left: 40%;
+				opacity: 1;
+			}
+			100% {
+				top: 100vh;
+				left: 40%;
+				opacity: 0;
+			}
+		}
+		
+		@keyframes snowflake6 {
+			0% {
+				top: 0vh;
+				left: 50%;
+				opacity: 1;
+			}
+			100% {
+				top: 100vh;
+				left: 50%;
+				opacity: 0;
+			}
+		}
+		@keyframes snowflake7 {
+			0% {
+				top: 10vh;
+				left: 60%;
+				opacity: 1;
+			}
+			100% {
+				top: 100vh;
+				left: 60%;
+				opacity: 0;
+			}
+		}
+		
+		@keyframes snowflake8 {
+			0% {
+				top: 0vh;
+				left: 70%;
+				opacity: 1;
+			}
+			100% {
+				top: 100vh;
+				left: 70%;
+				opacity: 0;
+			}
+		}
+		
+		@keyframes snowflake9 {
+			0% {
+				top: 10vh;
+				left: 80%;
+				opacity: 1;
+			}
+			100% {
+				top: 100vh;
+				left: 80%;
+				opacity: 0;
+			}
+		}
+		
+		@keyframes snowflake10 {
+			0% {
+				top: 0vh;
+				left: 90%;
+				opacity: 1;
+			}
+			100% {
+				top: 100vh;
+				left: 90%;
+				opacity: 0;
+			}
+		}
+		
+		@keyframes snowflake11 {
+			0% {
+				top: 10vh;
+				left: 95%;
+				opacity: 1;
+			}
+			100% {
+				top: 95vh;
+				left: 95%;
+				opacity: 0;
+			}
+		}
+		
+		
+		
+		
+		
+		.snowflake {
+			background-image: url(Images/snowflake.png);
+			background-size: 50px 50px;
+			
+			animation-duration: 7s;
+			background-repeat: no-repeat;
+			height: 50px;
+			width: 50px;
+			opacity: 0.2;
+			animation-iteration-count: infinite;
+			transition-property: top, bottom;
+			position: absolute;
+			z-index: -1;
+		}
+		
+.snowflake1 {
+	animation-name: snowflake;
+}
+
+.snowflake2 { animation-name: snowflake2; animation-duration: 9s;}
+.snowflake3 { animation-name: snowflake3; animation-duration: 11s;}
+.snowflake4 { animation-name: snowflake4; animation-duration: 6s;}
+.snowflake5 { animation-name: snowflake5; animation-duration: 8s;}
+.snowflake6 { animation-name: snowflake6; animation-duration: 9.5s;}
+.snowflake7 { animation-name: snowflake7; animation-duration: 4s;}
+.snowflake8 { animation-name: snowflake8; animation-duration: 8.5s;}
+.snowflake9 { animation-name: snowflake9; animation-duration: 9s;}
+.snowflake10 { animation-name: snowflake10; animation-duration: 7s;}
+.snowflake11 { animation-name: snowflake11; animation-duration: 10s;}
