@@ -1,17 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css?family=Lobster');
 @import url('https://fonts.googleapis.com/css?family=Euphoria+Script');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 html {
 	height: 100%;
 	width: 100%;
+	
 }
 
 body {
 	
 	color: #545454;
 	font-family: "Roboto";
-	font-size: 18px;
+	font-size:  1.2vw;
 	line-height: 1.5;
 	margin: 0;
 	margin-bottom: 0;

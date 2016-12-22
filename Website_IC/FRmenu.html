@@ -10,14 +10,67 @@
 	<link rel="stylesheet" href="css/Design.css">
 	<link rel="stylesheet" href="css/Background.css">
 	<link rel="stylesheet" href="css/navbar.css">
+	<link rel="icon" href="Images/Logo.ico">
 	<style>
-		body {
-			background: url(Images/achtergrondmenu.jpg)no-repeat center center fixed;
+		.bgimg-1,
+		.bgimg-2,
+		.bgimg-3,
+		.bgimg-4,
+		.bgimg-5,
+		.bgimg-6,
+		.bgimg-7,
+		.bgimg-8,
+		.bgimg-9 {
+			position: relative;
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		
+		.bgimg-1 {
+			background-image: url("Images/scampi.jpg");
 			
-			-webkit-background-size: cover;
-  			-moz-background-size: cover;
-			-o-background-size: cover;
-  			background-size: cover;
+		}
+		
+		.bgimg-2 {
+			background-image: url("Images/pasta.jpg");
+			
+		}
+		
+		.bgimg-3 {
+			background-image: url("Images/scal.jpg");
+			
+		}
+		
+		.bgimg-4 {
+			background-image: url("Images/steak.jpg");
+			
+		}
+		
+		.bgimg-5 {
+			background-image: url("Images/pesce.jpg");
+			
+		}
+		
+		.bgimg-6 {
+			background-image: url("Images/Icontorni.jpg");
+			
+		}
+		
+		.bgimg-7 {
+			background-image: url("Images/7.jpg");
+			
+		}
+		
+		.bgimg-8 {
+			background-image: url("Images/bambini.jpg");
+			
+		}
+		
+		.bgimg-9 {
+			background-image: url("Images/tiramisu.jpg");
+			
 		}
 		
 		div.container {
@@ -26,7 +79,9 @@
 		}
 		
 		div.header {
-			height: 120px;
+			height: calc(35vh-120px);
+			text-align: center;
+			vertical-align: middle;
 			text-align: center;
 			color: beige;
 			background-color: #2B0000;
@@ -41,7 +96,8 @@
 		
 		.header h1 {
 			padding: 0;
-			margin: 2%;
+			margin: 0;
+			
 		}
 		
 		div.left {
@@ -51,6 +107,9 @@
 			font-weight: bold;
 			line-height: 50px;
 			color: #4B0303;
+			width: 63%;
+			margin: auto;
+			background: rgba(253, 221, 161, 0.7);
 		}
 		
 		img {
@@ -59,8 +118,8 @@
 		}
 		
 		h2 {
-			margin-top: 2%;
-			padding-top: 2%;
+			
+			padding-top: 4%;
 			margin-bottom: 0;
 			font-weight: bold;
 			text-align: center;
@@ -110,6 +169,7 @@
 						<li><a href="FRopenTA.html">Take-away</a></li>
 						
 					</ul></li>
+				<li><a href="FRform.html">RESERVATION</a></li>
 				<li><a href="FRlocatie.html">LOCATION</a></li>
 				<li><a href="menu2.html">NL</a> </li>
 				<li><a href="FRmenu.html">FR</a></li>
@@ -118,6 +178,7 @@
 		</nav>
 	</header>
 	<section>
+		<div class="bgimg-1">
 		<div class="container">
 			<div class="header">
 				<h1 class="header">ENTRATE</h1></div>
@@ -146,6 +207,8 @@
 				</ul>
 			</div>
 		</div>
+		</div>
+		<div class="bgimg-2">
 		<div class="container">
 			<div class="header">
 				<h1>PASTA</h1>
@@ -178,6 +241,8 @@
 				</ul>
 			</div>
 		</div>
+			</div>
+		<div class="bgimg-3">
 		<div class="container">
 			<div class="header">
 				<h1>SCALOPPINE DI VITELLO</h1>
@@ -204,6 +269,8 @@
 				</div>
 			</div>
 		</div>
+			</div>
+		<div class="bgimg-4">
 		<div class="container">
 			<div class="header">
 				<h1>CARNE</h1>
@@ -239,6 +306,8 @@
 				</div>
 			</div>
 		</div>
+			</div>
+		<div class="bgimg-5">
 		<div class="container">
 			<div class="header">
 				<h1>PESCE </h1>
@@ -261,6 +330,8 @@
 				</div>
 			</div>
 		</div>
+			</div>
+		<div class="bgimg-6">
 		<div class="container">
 			<div class="header">
 				<h1>I CONTORNI </h1>
@@ -279,7 +350,8 @@
 				</ul>
 			</div>
 		</div>
-		<a id="Pizza"></a>
+		</div>
+		<div class="bgimg-7">
 		<div class="container">
 			<div class="header">
 				<h1>PIZZA </h1>
@@ -316,6 +388,8 @@
 				</ul>
 			</div>
 		</div>
+			</div>
+		<div class="bgimg-8">
 		<div class="container">
 			<div class="header">
 				<h1>BAMBINI </h1>
@@ -332,6 +406,8 @@
 				</ul>
 			</div>
 		</div>
+			</div>
+		<div class="bgimg-9">
 		<div class="container">
 			<div class="header">
 				<h1>DESSERT </h1>
@@ -370,6 +446,7 @@
 					<li>Mix de fromages italiens</li>
 				</ul>
 			</div>
+		</div>
 		</div>
 	</section>
 	<footer>

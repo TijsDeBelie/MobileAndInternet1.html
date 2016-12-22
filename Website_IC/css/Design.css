@@ -32,9 +32,19 @@ h2 {
 }
 
 .adres {
+	display: block;
 	text-align: center;
-	font: 30px;
+	font-size: 30px;
 	list-style-type: none;
+	line-height: 70px;
+	max-width: 100%;
+	color: #4B0303;
+	margin: auto;
+	font-family: 'Euphoria Script';
+	font-size:calc(35px + 1vw);
+	font-weight: bold;
+	list-style-type: none;
+	padding: 3%;
 }
 
 .Menukeuze {
@@ -118,24 +128,28 @@ thead {
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 25px;
+	z-index: 1;
 }
 
 .saus2 {
 	list-style-type: none;
+	z-index: 1;
 }
 
 .saus3 {
-	padding-top: 2%;
-	margin-top: 2%;
-	padding-bottom: 2%;
-	margin-bottom: 2%;
+	padding-top: 4%;
+	
+	padding-bottom: 4%;
+	
 	font-weight: bold;
 	font-size: 25px;
+	z-index: 1;
 }
 
 .saus4 {
-	padding-bottom: 2%;
-	margin-bottom: 2%;
+	padding-bottom: 4%;
+	z-index: 1;
+	
 }
 
 .wrap {
@@ -208,10 +222,10 @@ thead {
 
 .gerecht {
 	text-align: center;
-	margin-top: 2%;
-	padding-top: 2%;
-	padding-bottom: 2%;
-	margin-bottom: 2%;
+	
+	padding-top: 4%;
+	padding-bottom: 4%;
+	
 }
 
 #adres {
@@ -231,6 +245,8 @@ thead {
 	
 }
 
+
+
 .logoloc {
 	display: block;
     margin-left: auto;
@@ -246,6 +262,7 @@ thead {
 	font-weight: bold;
 	color: #4B0303;
 	text-decoration: underline;
+	z-index: 1;
 }
 
 
@@ -257,7 +274,7 @@ a {
 
 .welkom {
 	font-family: 'Euphoria Script';
-	font-size: 35px;
+	font-size: calc(25px + 1vw);
 	font-weight: bold;
 	text-align: center;
 	width: 100%;
@@ -289,7 +306,7 @@ a {
 	margin: auto;
 }
 
-.openingsuren3 {}
+
 
 .center {
 	display: block;
@@ -305,7 +322,7 @@ a {
 	margin: 0 auto;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin-top: 4%;
-	font-size: 18px;
+	font-size: calc(25px + 1vw);
 	background-color: beige;
 	line-height: 15px;
 }
@@ -319,11 +336,11 @@ a {
 .today {
 	text-transform: uppercase;
 	font-weight: 400;
-	font-size: 24px;
+	font-size: calc(25px + 0.5vw);
 }
 
 .time {
-	font-size: 28px;
+	font-size:calc(25px + 0.5vw);
 	width: 100%;
 	display: block;
 	padding-top: 16px;
@@ -344,7 +361,7 @@ a {
 
 #displaytextholder {
 	padding-top: 16px;
-	font-size: 18px;
+	font-size: 25px;
 	padding-bottom: 16px;
 	color: #4B0303;
 }
@@ -367,6 +384,7 @@ a {
 	margin-right: 16px;
 	margin-top: 16px;
 	text-align: center;
+	font-size: calc(25px + 1vw);
 	background-color: beige;
 }
 
@@ -376,7 +394,7 @@ a {
 
 .tg td {
 	font-family: Arial, sans-serif;
-	font-size: 14px;
+	font-size: calc(18px + 0.4vw);;
 	padding: 10px 5px;
 	margin-top: 15px;
 	border-style: solid;
@@ -400,7 +418,7 @@ a {
 }
 
 .fa-clock-o {
-	font-size: 28px;
+	font-size: calc(25px + 1vw);
 	color: #4B0303;
 }
 
@@ -503,8 +521,9 @@ iframe {
 }
 
 .gerecht2 {
-	padding-bottom: 2%;
-	margin-bottom: 2%;
+	padding-bottom: 4%;
+	
+	
 }
 
 .current {

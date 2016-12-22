@@ -50,6 +50,7 @@ ul {
 .nav-1 ul li {
 	display: inline-block;
 	line-height: 95px;
+	font-size: 40px;
 	background: #4B0303;
 	z-index: 1;
 }
@@ -62,6 +63,9 @@ ul {
 }
 
 .nav-1 ul li a:hover {
+	background: #9A3434;
+}
+.nav-1 ul li a:focus {
 	background: #9A3434;
 }
 
@@ -136,7 +140,7 @@ nav ul li a:not(:only-child):after {
 	
 	.nav-1 ul li {
 		display: block;
-		
+		font-size: 20px;
 	}
 	
 	.nav-1 ul {
@@ -179,6 +183,7 @@ nav ul li a:not(:only-child):after {
 		
 	.fotobetaal{ position: fixed;
 					left: 160px;}
+	
 }
 @media screen and (max-width: 400px) {
 	.nav-1 img {
