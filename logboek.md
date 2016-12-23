@@ -49,11 +49,15 @@
 ..*Zondag 20/11 : Nog steeds geen extra informatie ontvangen, zelfs na herhaaldelijke mails
 
 ..*Zondag 20/11 : Mappenstructuur bijgewerkt, code opgeschoond
+
 ##**December**
 ---
 
 3.
+
 ..*Dinsdag 20/12 : goedgekeurd door Il casale
+
 ..*Donderdag 22/12 : laatste controle + laatste fouten uitgehaald van form
+
 ..*Vrijdag 23/12 : Website afgemaakt
 
