@@ -5,7 +5,7 @@
 
 
 
-<br>**##|Oktober|**
+<br>**## Oktober**
 <br>---
 <br> ..*Zaterdag 1/10 : interview gedaan met il casale + een stappenplan opgesteld..*
 <br> ..*Dinsdag 4/10 : Aan site gewerkt in les (basis html en css)*..
@@ -19,7 +19,7 @@
 <br> ||
 <br> ||
 <br> ||
-<br>**##November**
+<br>**## November**
 <br>---
 <br> ..*Dinsdag 01/11 : Geen les wegens vakantie
 <br> ..*Woensdag 02/11 : Openingsuren.html afgewerkt samen met nog wat kleine veranderingen en fouten uit de code gehaald
@@ -28,7 +28,7 @@
 <br> ..*Zaterdag 06/11 : Afspraak met Il casale om site voor te stellen
 <br> ..*Zondag 20/11 : Nog steeds geen extra informatie ontvangen, zelfs na herhaaldelijke mails
 <br> ..*Zondag 20/11 : Mappenstructuur bijgewerkt, code opgeschoond
-<br>**##December**
+<br>**## December**
 <br>---
 <br>
 <br>
