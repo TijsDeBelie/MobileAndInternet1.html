@@ -32,13 +32,21 @@
 2.
 
 ..*Dinsdag 01/11 : Geen les wegens vakantie
+
 ..*Woensdag 02/11 : Openingsuren.html afgewerkt samen met nog wat kleine veranderingen en fouten uit de code gehaald
+
 ..*Donderdag 03/11 : Facebook.html aangemaakt en het facebooklogo op Home.html gezet
+
 ..*Vrijdag 04/11 : Logboek bijgewerkt en beoordeling van Margo Anckaert gedaan. 
+
 ..*Zaterdag 06/11 : Afspraak met Il casale om site voor te stellen
+
 ..*Zondag 20/11 : Nog steeds geen extra informatie ontvangen, zelfs na herhaaldelijke mails
+
 ..*Zondag 20/11 : Mappenstructuur bijgewerkt, code opgeschoond
 ##**December**
 3.
+
+..*Vrijdag 23/12 : Website afgemaakt
 
 ---
