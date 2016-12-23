@@ -23,9 +23,12 @@
 
 ||
 ..*Dinsdag 25/10 :  Aan site gewerkt in les + oefening van les 6 gemaakt (ook geupload)
+
  ..*Vrijdag 28/10 : Gevraagde informatie gekregen van Il casale via USB
- ||
 ||
+
+||
+
 ||
 ##**November**
 ---
@@ -45,8 +48,10 @@
 
 ..*Zondag 20/11 : Mappenstructuur bijgewerkt, code opgeschoond
 ##**December**
-3.
+---
 
+3.
+..*Dinsdag 20/12 : goedgekeurd door Il casale
+..*Donderdag 22/12 : laatste controle + laatste fouten uitgehaald van form
 ..*Vrijdag 23/12 : Website afgemaakt
 
----
