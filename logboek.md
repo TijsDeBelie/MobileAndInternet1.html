@@ -5,7 +5,7 @@
 
 
 
-<br>**##Oktober**
+<br>**##|Oktober|**
 <br>---
 <br> ..*Zaterdag 1/10 : interview gedaan met il casale + een stappenplan opgesteld..*
 <br> ..*Dinsdag 4/10 : Aan site gewerkt in les (basis html en css)*..
