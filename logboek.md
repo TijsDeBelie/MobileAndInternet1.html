@@ -5,7 +5,7 @@
 
 
 
-**##Oktober**
+##**Oktober**
 ---
 ..*Zaterdag 1/10 : interview gedaan met il casale + een stappenplan opgesteld..*
 
