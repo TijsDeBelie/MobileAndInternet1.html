@@ -7,6 +7,8 @@
 
 ##**Oktober**
 ---
+1.
+
 ..*Zaterdag 1/10 : interview gedaan met il casale + een stappenplan opgesteld
 
 ..*Dinsdag 4/10 : Aan site gewerkt in les (basis html en css)
@@ -27,6 +29,8 @@
 ||
 ##**November**
 ---
+2.
+
 ..*Dinsdag 01/11 : Geen les wegens vakantie
 ..*Woensdag 02/11 : Openingsuren.html afgewerkt samen met nog wat kleine veranderingen en fouten uit de code gehaald
 ..*Donderdag 03/11 : Facebook.html aangemaakt en het facebooklogo op Home.html gezet
@@ -35,4 +39,6 @@
 ..*Zondag 20/11 : Nog steeds geen extra informatie ontvangen, zelfs na herhaaldelijke mails
 ..*Zondag 20/11 : Mappenstructuur bijgewerkt, code opgeschoond
 ##**December**
+3.
+
 ---
