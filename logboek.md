@@ -7,9 +7,9 @@
 
 <br>**##Oktober**
 <br>---
-<br> ..*Zaterdag 1/10 : interview gedaan met il casale + een stappenplan opgesteld
-<br> ..*Dinsdag 4/10 : Aan site gewerkt in les (basis html en css)
-<br> ..*Dinsdag 18/10 :  Aan site gewerkt in les (basis html en css)
+<br> ..*Zaterdag 1/10 : interview gedaan met il casale + een stappenplan opgesteld*..
+<br> ..*Dinsdag 4/10 : Aan site gewerkt in les (basis html en css)*..
+<br> ..*Dinsdag 18/10 :  Aan site gewerkt in les (basis html en css)*..
 <br> ..*zondag   23/10 : nogmaals contact gezocht met il_casale om meer informatie te verkrijgen, wijnkaart en beschrijving bedrijf
 <br> ||
 <br> ||      Site verder afgewerkt in de tussentijd (met random tekst en foto's)
