@@ -22,14 +22,16 @@
 ||      Site verder afgewerkt in de tussentijd (met random tekst en foto's)
 
 ||
+
 ..*Dinsdag 25/10 :  Aan site gewerkt in les + oefening van les 6 gemaakt (ook geupload)
 
- ..*Vrijdag 28/10 : Gevraagde informatie gekregen van Il casale via USB
+..*Vrijdag 28/10 : Gevraagde informatie gekregen van Il casale via USB
 ||
 
 ||
 
 ||
+
 ##**November**
 ---
 2.
