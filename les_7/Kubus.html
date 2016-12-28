@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, height=device-height" />
+	<title>les 10</title>
+	<style>
+		@keyframes Kubus {
+			0% {
+				left: 0%;
+				bottom: 90%;
+			}
+			25% {
+				left: 92%;
+				bottom: 90%;
+			}
+			50% {
+				bottom: 0%;
+				left: 92%;
+			}
+			75% {
+				bottom: 0%;
+				left: 0%;
+			}
+			100% {
+				bottom: 90%;
+				left: 0%
+			}
+		}
+		
+		div {
+			background: red;
+			animation-name: Kubus;
+			animation-duration: 10s;
+			animation-iteration-count: infinite;
+			transition-property: left, right, bottom;
+			transition-duration: 10s;
+			height: 100px;
+			width: 100px;
+			background-color: #c00;
+			position: absolute;
+		}
+	</style>
+</head>
+
+<body>
+	<div></div>
+</body>
+
+</html>
